@@ -2,7 +2,7 @@
 title: "Sergio Ibarra-Espinosa"
 image: "avatar.jpeg"
 links:
-  - LinkedIn: "https://linkedin.com/sibarra"
+  - LinkedIn: "https://www.linkedin.com/in/sibarra/"
   - Twitter: "https://twitter.com/SergioIbarraEs1"
   - GitHub: "https://github.com/ibarraespinosa"
   - Email: "mailto:sergio.ibarra@usp.br"
@@ -10,7 +10,7 @@ links:
   - ORCID: "https://orcid.org/0000-0002-3162-1905"
   - CV: "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4695619Y4"
 output:
-  postcards::jolla_blue
+  postcards::trestles
 ---
 
 ## Bio
@@ -22,6 +22,16 @@ VEIN is used in many countries in the globe and includes emission factors for Ch
 Europe, Brazil and United States. I collaborate with researches in air quality, mobility
 and climate change.
 
+## Work 
+
+**Universidade de São Paulo** | São Paulo, Brazil
+
+Postdoc | November 2017
+
+**Chinese Academy of Sciences** | Changchun, China
+
+Postdoc | 2019
+
 ## Education
 
 **Universidade de São Paulo** | São Paulo, Brazil
@@ -31,3 +41,8 @@ Ph.D. in Atmospheric Science | July 2013 - October 2017
 **Universidad de Chile** | Santiago, Chile
 
 MSc. in Environmental Management| March 2010 - May December 2011
+
+
+**Universidad Tecnológica Metropolitana** | Santiago, Chile
+
+BS. Engineer in risk prevention and environment| March 2003 - May December 2007

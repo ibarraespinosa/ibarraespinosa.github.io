@@ -146,19 +146,19 @@ projects:
     assignments:
       - title: NOAA - Quantifying the impacts of COVID-19 on U.S. national and regional non-CO2 greenhouse gas emissions from atmospheric observations
         link: "https://gml.noaa.gov/ccgg/carbontracker-ch4/summary.html"
-        tagline: "A project to estimate CH4 posterior emissions during the COVID-19 period"
+        tagline: "Postdoc: A project to estimate CH4 posterior emissions during the COVID-19 period"
 
       - title: IPEN - Inventário de emissões de gases de efeito estufa, transporte e dispersão na Região Metropolitana de São Paulo
         link: "http://www.metroclima.iag.usp.br/members/"
-        tagline: "Estimate, model and calcualte fluxes of green house gases over the Metropolitan Area of Sao Paulo."
+        tagline: "Postdoc: Estimate, model and calcualte fluxes of green house gases over the Metropolitan Area of Sao Paulo."
 
-      - title: Tempo
-        link: "#"
-        tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+      - title: CAS - Vehicular emissions inventory for North East China
+        link: "http://english.iga.cas.cn/"
+        tagline: "Postdoc: Implementation of the VEIN model in North East China"
 
-      - title: Atom
-        link: "#"
-        tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
+      - title: USP - Inventário De Emissões Para As Regiões Metropolitanas De São Paulo E Rio De Janeiro
+        link: "https://www.iag.usp.br/pos/meteorologia/portugues/programa-de-p%C3%B3s-doutorado-capes"
+        tagline: "Postdoc: Development of different vehicular emissions inventory and air quality model runs."
 
       - title: Delta
         link: "#"

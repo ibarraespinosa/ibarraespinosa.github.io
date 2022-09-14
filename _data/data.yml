@@ -169,7 +169,7 @@ publications:
     papers:
       - title: VEIN v0. 2.2 An R package for bottom–up vehicular emissions inventories. 2018.
         link: "https://gmd.copernicus.org/articles/11/2209/2018/"
-        authors: Ibarra-Espinosa, S., Ynoue, R., O'Sullivan, S., Pebesma, E., Andrade, M. D. F., & Osses, M.
+        authors: Ibarra-Espinosa, S., Ynoue, R., O Sullivan, S., Pebesma, E., Andrade, M. D. F., & Osses, M.
         conference: Geoscientific Model Development, 11(6), 2209-2229.
 
       - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"

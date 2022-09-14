@@ -62,16 +62,16 @@ career-profile:
 education:
     title: Education
     info:
-      - degree: MSc in Computer Science
-        university: University of London
-        time: 2011 - 2012
+      - degree: Doctorate in Meteorology
+        university: Universidade de Sao Paulo, Sao Paulo, Brazil
+        time: 2013 - 2017
         details: |
-          Describe your study here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-          sociis natoque penatibus et magnis dis parturient montes, nascetur
-          ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-          pretium quis, sem.
-            - Bullet point
+          I researched on vehicular emissions and developed an R package named 
+          Vehicular Emissions INVentories (VEIN) available to the public 
+          In my thesis I estimated vehicular emissions using acvitity from
+          GPS, traffic counts and travel demand model outputs.
+          Al estimation we balanced by fuel consumption.
+          Then, I model air quality using WRF-Chem.
             - Bullet point
       - degree: BSc in Applied Mathematics
         university: Bristol University

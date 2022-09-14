@@ -103,7 +103,7 @@ experiences:
           on CH4 Emissions in North America. Footprints are generated
           using <a href="https://www.ready.noaa.gov/HYSPLIT.php">hysplit</a>
           for <a href="https://gml.noaa.gov/ccgg/obspack/data.php">NOAA CH4 Obspack GLOBALVIEW</a>.
-          Then, it is used an inverse model based on <a href="https://gml.noaa.gov/ccgg/carbontracker-lagrange/doc/index.html"> carbon-tracker lagranger</a>.
+          Then, it is used an inverse model based on <a href="https://gml.noaa.gov/ccgg/carbontracker-lagrange/doc/index.html">carbon-tracker lagranger</a>.
           I developed an R package named <a href="https://github.com/ibarraespinosa/robspackfilter">robspackfilter<a/>. 
       - role: Visiting Researcher NCAR - <a href="https://ibarraespinosa.github.io/">PDF</a>
         time: 2021 - Present
@@ -111,7 +111,7 @@ experiences:
         details: |
           This work consists in model air quality in south america
           using the model Multi-Scale Infrastructure for Chemistry Modeling 
-          <a href="https://www2.acom.ucar.edu/sections/multi-scale-infrastructure-chemistry-modeling-musica">(MUSICA)</a>.
+          <a href="https://www2.acom.ucar.edu/sections/multi-scale-infrastructure-chemistry-modeling-musica">MUSICA</a>.
           Currently I'm running global MUSICA with a zoom
           over south america. My current runs cover two months
            Describe your role 

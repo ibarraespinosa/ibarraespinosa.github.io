@@ -62,7 +62,7 @@ career-profile:
 education:
     title: Education
     info:
-      - degree: Doctorate in Meteorology <a href="https://ibarraespinosa.github.io/">TITLE</a>
+      - degree: Doctorate in Meteorology - <a href="https://ibarraespinosa.github.io/">PDF</a>
         university: Universidade de Sao Paulo, Sao Paulo, Brazil
         time: 2013 - 2017
         details: |
@@ -74,14 +74,14 @@ education:
           Al estimation we balanced by fuel consumption.
           Then, I model air quality using WRF-Chem.
             - Bullet point
-      - degree: Master in Environmental Management and Planning <a href="https://ibarraespinosa.github.io/">TITLE</a>
+      - degree: Master in Environmental Management and Planning - <a href="https://ibarraespinosa.github.io/">PDF</a>
         university: University of Chile, Santiago, Chile
         time: 2010 - 2011
         details: |
           The research during this master was focused in 
           the calculation of vehicular emissions using the 
           models COPERT and HBEFA in Santiago, Chile.
-      - degree: Engineering in Risk Prevention and Environment <a href="https://ibarraespinosa.github.io/">TITLE</a>
+      - degree: Engineering in Risk Prevention and Environment - <a href="https://ibarraespinosa.github.io/">PDF</a>
         university: Universidad Tecnologica Metropolitana (UTEM), Santiago, Chile
         time: 2003 - 2007
         details: |
@@ -96,14 +96,14 @@ education:
 experiences:
     title: Experiences
     info:
-      - role: Postdoc NOAA <a href="https://ibarraespinosa.github.io/">TITLE</a>
+      - role: Postdoc NOAA - <a href="https://ibarraespinosa.github.io/">PDF</a>
         time: 2022 - Present
         company: National Oceanographic and Atmospheric Administration (NOAA) and CIRES (Colorado University)
         details: |
           NOAA Quantifying Impact of COVID-19 on CH4 Emissions in North 
           America.
             - Bullet point
-      - role: Visiting Researcher NCAR <a href="https://ibarraespinosa.github.io/">TITLE</a>
+      - role: Visiting Researcher NCAR - <a href="https://ibarraespinosa.github.io/">PDF</a>
         time: 2021 - Present
         company: National Center for Atmospheric Research (NCAR), Boulder, Colorado, USA
         details: |
@@ -113,7 +113,7 @@ experiences:
           nascetur ridiculus mus. Donec quam felis, ultricies nec,
           pellentesque eu, pretium quis, sem.
             - Bullet point
-      - role: Postdoc IPEN <a href="https://ibarraespinosa.github.io/">TITLE</a>
+      - role: Postdoc IPEN - <a href="https://ibarraespinosa.github.io/">PDF</a>
         time: 2021 - 2021
         company: Institute of Nuclear and Energetic Research (IPEN)
         details: |
@@ -124,7 +124,7 @@ experiences:
           pellentesque eu, pretium quis, sem.
             - Bullet point
             - Bullet point
-      - role: Postdoc CAS <a href="https://ibarraespinosa.github.io/">TITLE</a>
+      - role: Postdoc CAS - <a href="https://ibarraespinosa.github.io/">PDF</a>
         time: 2019
         company: Chinese Academy of Sciences, Changchun, Jilin, China
         details: |
@@ -135,7 +135,7 @@ experiences:
           pellentesque eu, pretium quis, sem.
             - Bullet point
             - Bullet point
-      - role: Postdoc USP <a href="https://ibarraespinosa.github.io/">TITLE</a>
+      - role: Postdoc USP - <a href="https://ibarraespinosa.github.io/">PDF</a>
         time: 2017 - 2021
         company: Universidade de Sao Paulo, Sao Paulo, Brazil
         details: |

@@ -110,12 +110,11 @@ experiences:
         company: National Center for Atmospheric Research (NCAR), Boulder, Colorado, USA
         details: |
           This work consists in model air quality in south america
-          using the model Describe your role here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem.
-            - Bullet point
+          using the model Multi-Scale Infrastructure for Chemistry Modeling 
+          <a href="https://www2.acom.ucar.edu/sections/multi-scale-infrastructure-chemistry-modeling-musica">(MUSICA)</a>.
+          Currently I'm running global MUSICA with a zoom
+          over south america. My current runs cover two months
+           Describe your role 
       - role: Postdoc IPEN - <a href="https://ibarraespinosa.github.io/">PDF</a>
         time: 2021 - 2021
         company: Institute of Nuclear and Energetic Research (IPEN)

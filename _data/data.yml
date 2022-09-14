@@ -73,17 +73,25 @@ education:
           Al estimation we balanced by fuel consumption.
           Then, I model air quality using WRF-Chem.
             - Bullet point
-      - degree: BSc in Applied Mathematics
-        university: Bristol University
-        time: 2007 - 2011
+      - degree: Master in Environmental Management and Planning
+        university: University of Chile, Santiago, Chile
+        time: 2010 - 2011
         details: |
-          Describe your study here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-          sociis natoque penatibus et magnis dis parturient montes, nascetur
-          ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-          pretium quis, sem.
-            - Bullet point
-            - Bullet point
+          The research during this master was focused in 
+          the calculation of vehicular emissions using the 
+          models COPERT and HBEFA in Santiago, Chile.
+      - degree: Engineering in Risk Prevention and Environment
+        university: Universidad Tecnologica Metropolitana (UTEM), Santiago, Chile
+        time: 2003 - 2007
+        details: |
+          I graduated with the final work entitled “Effects of air pollution 
+          on Acute Respiratory Infections of the Emergency Care Service 
+          (SAPU) Pudahuel La Estrella". 
+          I applied time seires and compared negative binomial
+          and poisson distribution [(Ibarra-Espinosa, 2007)](URL). 
+          I obtained also two diplomas.
+            - 2005-2006 Communication and Leadership[](URL)
+            - 2005-2006 English for Professional Purposes[](URL)
 experiences:
     title: Experiences
     info:

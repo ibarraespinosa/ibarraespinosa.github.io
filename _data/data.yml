@@ -107,7 +107,7 @@ experiences:
           for <a href="https://gml.noaa.gov/ccgg/obspack/data.php">NOAA CH4 Obspack GLOBALVIEW</a>.
           Then, it is used an inverse model based on <a href="https://gml.noaa.gov/ccgg/carbontracker-lagrange/doc/index.html">carbon-tracker lagranger</a>.
           I developed an R package named <a href="https://github.com/ibarraespinosa/robspackfilter">robspackfilter<a/>. 
-      - role: <b>Postdoc Visiting Researcher NCAR</b> - <a href="https://ibarraespinosa.github.io/">PDF</a>
+      - role: <b>Visiting Researcher NCAR</b> - <a href="https://ibarraespinosa.github.io/">PDF</a>
         time: 2021 - Present
         company: National Center for Atmospheric Research (NCAR), Boulder, Colorado, USA
         details: |
@@ -141,13 +141,12 @@ experiences:
 projects:
     title: Projects
     intro: >
-      You can list your side projects or open source libraries in this
-      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+      Here are lsited some of the projects and research
+      initiatives in which I have participated.
     assignments:
-      - title: Velocity
-        link: "#hook"
-        tagline: "A responsive website template designed to help startups promote, market and sell their products."
+      - title: Quantifying the impacts of COVID-19 on U.S. national and regional non-CO2 greenhouse gas emissions from atmospheric observations
+        link: "https://gml.noaa.gov/ccgg/carbontracker-ch4/summary.html"
+        tagline: "A project to estimate CH4 posterior emissions during the COVID-19 period"
 
       - title: DevStudio
         link: "#"

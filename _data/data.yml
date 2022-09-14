@@ -186,11 +186,25 @@ publications:
         authors: Ibarra-Espinosa, S., de Freitas, E. D., Ropkins, K., Dominici, F., & Rehbein, A.
         conference: "Environmental research, 204, 112369."
 
-      - title: Negative-Binomial and quasi-poisson regressions between COVID-19, mobility and environment in São Paulo, Brazil. 2022.
+      - title: A comprehensive spatial and temporal vehicular emissions for northeast China. 2021.
         link: "https://www.sciencedirect.com/science/article/pii/S0013935121016704"
-        authors: Ibarra-Espinosa, S., de Freitas, E. D., Ropkins, K., Dominici, F., & Rehbein, A.
-        conference: "Environmental research, 204, 112369."
-        
+        authors: Ibarra-Espinosa, S., Zhang, X., Xiu, A., Gao, C., Wang, S., Ba, Q., Gao, C., Chen, W.
+        conference: "Atmospheric Environment, 244, 117952."
+
+      - title: eixport An R package to export emissions to atmospheric models. 2018.
+        link: "https://joss.theoj.org/papers/10.21105/joss.00607.pdf"
+        authors: Ibarra-Espinosa, S., Schuch, D., & de Freitas, E. D.
+        conference: "Journal of Open Source Software, 3(24), 607."
+
+      - title: Atmospheric effects of air pollution during dry and wet periods in São Paulo. 2011.
+        link: "https://pubs.rsc.org/en/content/articlehtml/2022/ea/d1ea00080b"
+        authors: Ibarra-Espinosa, S., da Silva, G. A. M., Rehbein, A., Vara-Vela, A., & de Freitas, E. D.
+        conference: "Environmental Science: Atmospheres, 2(2), 215-229."
+
+      - title: Effects of evaporative emissions control measurements on ozone concentrations in Brazil. 2022.
+        link: "https://www.mdpi.com/1436214"
+        authors: Ibarra-Espinosa, S., Freitas, E. D. D., Andrade, M. D. F., & Landulfo, E.
+        conference: "Atmosphere, 13(1), 82."
 skills:
     title: Skills &amp; Proficiency
 

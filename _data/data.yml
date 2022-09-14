@@ -23,6 +23,7 @@ sidebar:
     gitlab: ibarraespinosa
     twitter: '@ibarra_et_al'
     stack-overflow: 2418532/sergio
+    youtube: https://www.youtube.com/channel/UC2oYaS9mpnIDk8w55O8_bTg
     codewars:
     goodreads: # Number-Username, e.g. 123456-alandoe
     pdf: http://www.africau.edu/images/default/sample.pdf
@@ -31,25 +32,25 @@ sidebar:
       title: Languages
       info:
         - idiom: English
-          level: Native
+          level: Professional
 
-        - idiom: French
+        - idiom: Portuguese
           level: Professional
 
         - idiom: Spanish
-          level: Professional
+          level: Native
 
     interests:
       title: Interests
       info:
-        - item: Climbing
-          link:
+        - item: DJ
+          link: https://www.instagram.com/djlowkeyfromasgard/
 
-        - item: Snowboarding
-          link:
+        - item: Producer
+          link: https://soundcloud.com/xhie
 
         - item: Cooking
-          link:
+          link: instantpot
 
 career-profile:
     title: Career Profile

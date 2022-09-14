@@ -166,6 +166,10 @@ projects:
 
 publications:
     title: Publications
+    intro: |
+      You can list your publications in this section. Lorem ipsum dolor sit
+      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
+      bibendum fringilla a eu lectus.
     papers:
       - title: VEIN v0. 2.2 An R package for bottom–up vehicular emissions inventories. 2018.
         link: "https://gmd.copernicus.org/articles/11/2209/2018/"

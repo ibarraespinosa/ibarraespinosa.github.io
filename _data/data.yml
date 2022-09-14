@@ -113,19 +113,13 @@ experiences:
           using the model Multi-Scale Infrastructure for Chemistry Modeling 
           <a href="https://www2.acom.ucar.edu/sections/multi-scale-infrastructure-chemistry-modeling-musica">MUSICA</a>.
           Currently I'm running global MUSICA with a zoom
-          over south america. My current runs cover two months
-           Describe your role 
+          over South America. 
       - role: Postdoc IPEN - <a href="https://ibarraespinosa.github.io/">PDF</a>
         time: 2021 - 2021
         company: Institute of Nuclear and Energetic Research (IPEN)
         details: |
-          Describe your role here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem.
-            - Bullet point
-            - Bullet point
+          This work consisted in participating in the <a href="http://www.metroclima.iag.usp.br/">METROCLIMA</a>
+          estimating CO2 emissions and the performing inverse modeling.
       - role: Postdoc CAS - <a href="https://ibarraespinosa.github.io/">PDF</a>
         time: 2019
         company: Chinese Academy of Sciences, Changchun, Jilin, China

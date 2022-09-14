@@ -165,12 +165,12 @@ projects:
         tagline: "PhD student: A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
 
 publications:
-    title: Publications
+    title: Selected Publications
     papers:
-      - title: The Art of Computer Programming
-        link: "#"
-        authors: Donald E. Knuth
-        conference: Addison-Wesley, 1968
+      - title: VEIN v0. 2.2: An R package for bottom–up vehicular emissions inventories. 2018.
+        link: "https://gmd.copernicus.org/articles/11/2209/2018/"
+        authors: Ibarra-Espinosa, S., Ynoue, R., O'Sullivan, S., Pebesma, E., Andrade, M. D. F., & Osses, M.
+        conference: Geoscientific Model Development, 11(6), 2209-2229.
 
       - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
         link: "#"

@@ -97,13 +97,13 @@ experiences:
     info:
       - role: Postdoc NOAA - <a href="https://ibarraespinosa.github.io/">PDF</a>
         time: 2022 - Present
-        company: National Oceanographic and Atmospheric Administration (NOAA) and CIRES (Colorado University)
+        company: National Oceanographic and Atmospheric Administration <a href="https://gml.noaa.gov/about/stafflist_group.html">NOAA</a> and <a href="https://cires.colorado.edu/directory/sergio-ibarra-espinosa">CIRES</a> (Colorado University)
         details: |
           This works consists in Quantifying the Impacts of COVID-19 
           on CH4 Emissions in North America. Footprints are generated
           using <a href="https://www.ready.noaa.gov/HYSPLIT.php">hysplit</a>
           for <a href="https://gml.noaa.gov/ccgg/obspack/data.php">NOAA CH4 Obspack GLOBALVIEW</a>.
-            - Bullet point
+          I developed an R package named <a href="https://github.com/ibarraespinosa/robspackfilter">robspackfilter<a/>. 
       - role: Visiting Researcher NCAR - <a href="https://ibarraespinosa.github.io/">PDF</a>
         time: 2021 - Present
         company: National Center for Atmospheric Research (NCAR), Boulder, Colorado, USA

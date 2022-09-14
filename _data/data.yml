@@ -64,7 +64,7 @@ career-profile:
 education:
     title: Education
     info:
-      - degree: Doctorate in Meteorology - <a href="https://github.com/ibarraespinosa/ibarraespinosa.github.io/raw/master/pdf//USP_PHD_ENG.pdf">PDF</a> and <a href="https://github.com/ibarraespinosa/ibarraespinosa.github.io/raw/master/pdf//USP_HISTORICO_PHD.pdf">PDF</a>
+      - degree: Doctorate in Meteorology - <a href="https://github.com/ibarraespinosa/ibarraespinosa.github.io/raw/master/pdf//USP_PHD_ENG.pdf">TITLE</a> and <a href="https://github.com/ibarraespinosa/ibarraespinosa.github.io/raw/master/pdf//USP_HISTORICO_PHD.pdf">GRADES</a>
         university: Universidade de Sao Paulo, Sao Paulo, Brazil
         time: 2013 - 2017
         details: |
@@ -75,14 +75,14 @@ education:
           Al estimation we balanced by fuel consumption.
           Then, I model air quality using WRF-Chem.
             - Bullet point
-      - degree: Master in Environmental Management and Planning - <a href="https://github.com/ibarraespinosa/ibarraespinosa.github.io/raw/master/pdf/UCHILE_MAGISTER_ENG.pdf">PDF</a>
+      - degree: Master in Environmental Management and Planning - <a href="https://github.com/ibarraespinosa/ibarraespinosa.github.io/raw/master/pdf/UCHILE_MAGISTER_ENG.pdf">TITLE</a> and <a href="https://github.com/ibarraespinosa/ibarraespinosa.github.io/raw/master/pdf/UCHILE_CONS.pdf">GRADES</a>
         university: University of Chile, Santiago, Chile
         time: 2010 - 2011
         details: |
           The research during this master was focused in 
           the calculation of vehicular emissions using the 
           models COPERT and HBEFA in Santiago, Chile.
-      - degree: Engineering in Risk Prevention and Environment - <a href="https://github.com/ibarraespinosa/ibarraespinosa.github.io/raw/master/pdf/UTEM_ING_ENG.pdf">PDF</a> and<a href="https://github.com/ibarraespinosa/ibarraespinosa.github.io/raw/master/pdf/UTEM_LIC_ENG.pdf">PDF</a>
+      - degree: Engineering in Risk Prevention and Environment - <a href="https://github.com/ibarraespinosa/ibarraespinosa.github.io/raw/master/pdf/UTEM_ING_ENG.pdf">TITLE</a>, <a href="https://github.com/ibarraespinosa/ibarraespinosa.github.io/raw/master/pdf/UTEM_LIC_ENG.pdf">LIC</a>, <a href="https://github.com/ibarraespinosa/ibarraespinosa.github.io/raw/master/pdf/UTEM_COM.pdf">/DIP1</a> and <a href="https://github.com/ibarraespinosa/ibarraespinosa.github.io/raw/master/pdf/UTEM_ENG.pdf">PDF</a>
         university: Universidad Tecnologica Metropolitana (UTEM), Santiago, Chile
         time: 2003 - 2007
         details: |

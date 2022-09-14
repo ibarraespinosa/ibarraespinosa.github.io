@@ -165,7 +165,7 @@ projects:
         tagline: "PhD student: A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
 
 publications:
-    title: Selected Publications
+    title: Publications
     papers:
       - title: VEIN v0. 2.2 An R package for bottom–up vehicular emissions inventories. 2018.
         link: "https://gmd.copernicus.org/articles/11/2209/2018/"

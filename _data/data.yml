@@ -25,7 +25,7 @@ sidebar:
     stack-overflow: 2418532/sergio
     codewars:
     goodreads: # Number-Username, e.g. 123456-alandoe
-    pdf: http://www.africau.edu/images/default/sample.pdf
+    pdf: https://github.com/ibarraespinosa/ibarraespinosa.github.io/raw/master/pdf/cv_online.pdf
 
     languages:
       title: Languages
@@ -64,7 +64,7 @@ career-profile:
 education:
     title: Education
     info:
-      - degree: Doctorate in Meteorology - <a href="https://github.com/ibarraespinosa/ibarraespinosa.github.io/raw/master/pdf//USP_PHD_ENG.pdf">TITLE</a> and <a href="https://github.com/ibarraespinosa/ibarraespinosa.github.io/raw/master/pdf//USP_HISTORICO_PHD.pdf">GRADES</a>
+      - degree: Doctorate in Meteorology <br> <a href="https://github.com/ibarraespinosa/ibarraespinosa.github.io/raw/master/pdf//USP_PHD_ENG.pdf">TITLE</a> and <a href="https://github.com/ibarraespinosa/ibarraespinosa.github.io/raw/master/pdf//USP_HISTORICO_PHD.pdf">GRADES</a>
         university: Universidade de Sao Paulo, Sao Paulo, Brazil
         time: 2013 - 2017
         details: |
@@ -75,7 +75,7 @@ education:
           Al estimation we balanced by fuel consumption.
           Then, I model air quality using WRF-Chem.
             - Bullet point
-      - degree: Master in Environmental Management and Planning - <a href="https://github.com/ibarraespinosa/ibarraespinosa.github.io/raw/master/pdf/UCHILE_MAGISTER_ENG.pdf">TITLE</a> and <a href="https://github.com/ibarraespinosa/ibarraespinosa.github.io/raw/master/pdf/UCHILE_CONS.pdf">GRADES</a>
+      - degree: Master in Environmental Management and Planning <br> <a href="https://github.com/ibarraespinosa/ibarraespinosa.github.io/raw/master/pdf/UCHILE_MAGISTER_ENG.pdf">TITLE</a> and <a href="https://github.com/ibarraespinosa/ibarraespinosa.github.io/raw/master/pdf/UCHILE_CONS.pdf">GRADES</a>
         university: University of Chile, Santiago, Chile
         time: 2010 - 2011
         details: |
@@ -97,7 +97,7 @@ education:
 experiences:
     title: Experiences
     info:
-      - role: <b>Postdoc NOAA</b> - <a href="https://github.com/ibarraespinosa/ibarraespinosa.github.io/raw/master/pdf/NOAA_POST_ENG.pdf">PDF</a>
+      - role: <b>Postdoc NOAA</b> <br> <a href="https://github.com/ibarraespinosa/ibarraespinosa.github.io/raw/master/pdf/NOAA_POST_ENG.pdf">PDF</a>
         time: 2022 - Present
         company: National Oceanographic and Atmospheric Administration <a href="https://gml.noaa.gov/about/stafflist_group.html">NOAA</a> and <a href="https://cires.colorado.edu/directory/sergio-ibarra-espinosa">CIRES</a> (Colorado University)
         details: |
@@ -130,7 +130,7 @@ experiences:
           in North East China. The resulting manuscript
           was published in <a href="https://www.sciencedirect.com/science/article/abs/pii/S1352231020306865">Atmospheric Environment</a>
           Results. The inventory covered 133 pollutatns with monthly resolution.
-      - role: <b>Postdoc USP</b> - <a href="https://github.com/ibarraespinosa/ibarraespinosa.github.io/raw/master/pdf/USP_POST.pdf">PDF</a>
+      - role: <b>Postdoc USP</b> <br> <a href="https://github.com/ibarraespinosa/ibarraespinosa.github.io/raw/master/pdf/USP_POST.pdf">CERTIFICATE</a>
         time: 2017 - 2021
         company: Universidade de Sao Paulo, Sao Paulo, Brazil
         details: |

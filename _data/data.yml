@@ -124,13 +124,10 @@ experiences:
         time: 2019
         company: Chinese Academy of Sciences, Changchun, Jilin, China
         details: |
-          Describe your role here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem.
-            - Bullet point
-            - Bullet point
+          Here it was implemented the <a href="https://gmd.copernicus.org/articles/11/2209/2018/">VEIN </a>. model
+          in North East China. The resulting manuscript
+          was published in <a href="https://www.sciencedirect.com/science/article/abs/pii/S1352231020306865">Atmospheric Environment</a>
+          Results. The inventory covered 133 pollutatns with monthly resolution.
       - role: Postdoc USP - <a href="https://ibarraespinosa.github.io/">PDF</a>
         time: 2017 - 2021
         company: Universidade de Sao Paulo, Sao Paulo, Brazil

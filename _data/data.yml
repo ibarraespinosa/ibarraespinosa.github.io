@@ -66,7 +66,6 @@ education:
         university: Universidade de Sao Paulo, Sao Paulo, Brazil
         time: 2013 - 2017
         details: |
-          THESIS:
           I researched on vehicular emissions and developed an R package named 
           Vehicular Emissions INVentories (VEIN) available to the public 
           In my thesis I estimated vehicular emissions using acvitity from
@@ -100,8 +99,10 @@ experiences:
         time: 2022 - Present
         company: National Oceanographic and Atmospheric Administration (NOAA) and CIRES (Colorado University)
         details: |
-          NOAA Quantifying Impact of COVID-19 on CH4 Emissions in North 
-          America.
+          This works consists in Quantifying the Impacts of COVID-19 
+          on CH4 Emissions in North America. Footprints are generated
+          using <a href="https://www.ready.noaa.gov/HYSPLIT.php">hysplit</a>
+          for <a href="https://gml.noaa.gov/ccgg/obspack/data.php">NOAA CH4 Obspack GLOBALVIEW</a>.
             - Bullet point
       - role: Visiting Researcher NCAR - <a href="https://ibarraespinosa.github.io/">PDF</a>
         time: 2021 - Present

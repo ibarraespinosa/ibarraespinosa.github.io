@@ -176,10 +176,10 @@ publications:
         authors: Ibarra-Espinosa, S., Ynoue, R., O Sullivan, S., Pebesma, E., Andrade, M. D. F., & Osses, M.
         conference: Geoscientific Model Development, 11(6), 2209-2229.
 
-      - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-        link: "#"
-        authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-        conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
+      - title: High spatial and temporal resolution vehicular emissions in south-east Brazil with traffic data from real-time GPS and travel demand models. 2020.
+        link: "https://www.sciencedirect.com/science/article/pii/S1352231019307757"
+        authors: Ibarra-Espinosa, S., Ynoue, R. Y., Ropkins, K., Zhang, X., & de Freitas, E. D.
+        conference: "Atmospheric Environment, 222, 117136."
 
       - title: A syntax directed compiler for Algol 60
         link: "#"

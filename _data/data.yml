@@ -12,19 +12,17 @@ sidebar:
     avatar: sergio.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
-    email: hello@webjeda.com
-    phone: 012 345 6789
-    timezone: America/Cancun Timezone
+    email: sergio.ibarra-espinosa@noaa.gov
+    phone: +1 720 438 5345
+    timezone: America/Denver
     citizenship:
-    website: blog.webjeda.com #do not add http://
-    linkedin: alandoe
-    xing: alandoe
-    github: sharu725
-    telegram: # add your nickname without '@' sign
-    gitlab:
-    bitbucket:
-    twitter: '@webjeda'
-    stack-overflow: # Number/Username, e.g. 123456/alandoe
+    website: ibarraespinosa.github.com #do not add http://
+    linkedin: sibarra
+    github: ibarraespinosa
+    telegram: ibarraespinosa
+    gitlab: ibarraespinosa
+    twitter: '@ibarra_et_al'
+    stack-overflow: 2418532/sergio
     codewars:
     goodreads: # Number-Username, e.g. 123456-alandoe
     pdf: http://www.africau.edu/images/default/sample.pdf

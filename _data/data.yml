@@ -140,9 +140,6 @@ experiences:
           eixport and WRF-Chem. 
 projects:
     title: Projects
-    intro: >
-      Here are lsited some of the projects and research
-      initiatives in which I have participated.
     assignments:
       - title: NOAA - Quantifying the impacts of COVID-19 on U.S. national and regional non-CO2 greenhouse gas emissions from atmospheric observations
         link: "https://gml.noaa.gov/ccgg/carbontracker-ch4/summary.html"

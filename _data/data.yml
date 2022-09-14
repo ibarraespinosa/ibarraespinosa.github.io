@@ -181,11 +181,16 @@ publications:
         authors: Ibarra-Espinosa, S., Ynoue, R. Y., Ropkins, K., Zhang, X., & de Freitas, E. D.
         conference: "Atmospheric Environment, 222, 117136."
 
-      - title: A syntax directed compiler for Algol 60
-        link: "#"
-        authors: Edgar T. Irons
-        conference: "Comm. ACM 4 (1961), 51–55"
+      - title: Negative-Binomial and quasi-poisson regressions between COVID-19, mobility and environment in São Paulo, Brazil. 2022.
+        link: "https://www.sciencedirect.com/science/article/pii/S0013935121016704"
+        authors: Ibarra-Espinosa, S., de Freitas, E. D., Ropkins, K., Dominici, F., & Rehbein, A.
+        conference: "Environmental research, 204, 112369."
 
+      - title: Negative-Binomial and quasi-poisson regressions between COVID-19, mobility and environment in São Paulo, Brazil. 2022.
+        link: "https://www.sciencedirect.com/science/article/pii/S0013935121016704"
+        authors: Ibarra-Espinosa, S., de Freitas, E. D., Ropkins, K., Dominici, F., & Rehbein, A.
+        conference: "Environmental research, 204, 112369."
+        
 skills:
     title: Skills &amp; Proficiency
 

@@ -97,7 +97,7 @@ education:
 experiences:
     title: Experiences
     info:
-      - role: Postdoc NOAA - <a href="https://ibarraespinosa.github.io/">PDF</a>
+      - role: <b>Postdoc NOAA</b> - <a href="https://ibarraespinosa.github.io/">PDF</a>
         time: 2022 - Present
         company: National Oceanographic and Atmospheric Administration <a href="https://gml.noaa.gov/about/stafflist_group.html">NOAA</a> and <a href="https://cires.colorado.edu/directory/sergio-ibarra-espinosa">CIRES</a> (Colorado University)
         details: |
@@ -107,7 +107,7 @@ experiences:
           for <a href="https://gml.noaa.gov/ccgg/obspack/data.php">NOAA CH4 Obspack GLOBALVIEW</a>.
           Then, it is used an inverse model based on <a href="https://gml.noaa.gov/ccgg/carbontracker-lagrange/doc/index.html">carbon-tracker lagranger</a>.
           I developed an R package named <a href="https://github.com/ibarraespinosa/robspackfilter">robspackfilter<a/>. 
-      - role: Visiting Researcher NCAR - <a href="https://ibarraespinosa.github.io/">PDF</a>
+      - role: <b>Postdoc Visiting Researcher NCAR</b> - <a href="https://ibarraespinosa.github.io/">PDF</a>
         time: 2021 - Present
         company: National Center for Atmospheric Research (NCAR), Boulder, Colorado, USA
         details: |
@@ -116,13 +116,13 @@ experiences:
           <a href="https://www2.acom.ucar.edu/sections/multi-scale-infrastructure-chemistry-modeling-musica">MUSICA</a>.
           Currently I'm running global MUSICA with a zoom
           over South America. 
-      - role: Postdoc IPEN - <a href="https://ibarraespinosa.github.io/">PDF</a>
+      - role: <b>Postdoc IPEN</b> - <a href="https://ibarraespinosa.github.io/">PDF</a>
         time: 2021 - 2021
         company: Institute of Nuclear and Energetic Research (IPEN)
         details: |
           This work consisted in participating in the <a href="http://www.metroclima.iag.usp.br/">METROCLIMA</a>
           estimating CO2 emissions and the performing inverse modeling.
-      - role: Postdoc CAS - <a href="https://ibarraespinosa.github.io/">PDF</a>
+      - role: <b>Postdoc CAS</b> - <a href="https://ibarraespinosa.github.io/">PDF</a>
         time: 2019
         company: Chinese Academy of Sciences, Changchun, Jilin, China
         details: |
@@ -130,7 +130,7 @@ experiences:
           in North East China. The resulting manuscript
           was published in <a href="https://www.sciencedirect.com/science/article/abs/pii/S1352231020306865">Atmospheric Environment</a>
           Results. The inventory covered 133 pollutatns with monthly resolution.
-      - role: Postdoc USP - <a href="https://ibarraespinosa.github.io/">PDF</a>
+      - role: <b>Postdoc USP</b> - <a href="https://ibarraespinosa.github.io/">PDF</a>
         time: 2017 - 2021
         company: Universidade de Sao Paulo, Sao Paulo, Brazil
         details: |

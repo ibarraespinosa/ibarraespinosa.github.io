@@ -97,7 +97,7 @@ education:
 experiences:
     title: Experiences
     info:
-      - role: <b>Postdoc NOAA</b> <br> <a href="https://github.com/ibarraespinosa/ibarraespinosa.github.io/raw/master/pdf/NOAA_POST_ENG.pdf">PDF</a>
+      - role: <b>Postdoc NOAA</b> <a href="https://github.com/ibarraespinosa/ibarraespinosa.github.io/raw/master/pdf/NOAA_POST_ENG.pdf">PDF</a>
         time: 2022 - Present
         company: National Oceanographic and Atmospheric Administration <a href="https://gml.noaa.gov/about/stafflist_group.html">NOAA</a> and <a href="https://cires.colorado.edu/directory/sergio-ibarra-espinosa">CIRES</a> (Colorado University)
         details: |
@@ -130,7 +130,7 @@ experiences:
           in North East China. The resulting manuscript
           was published in <a href="https://www.sciencedirect.com/science/article/abs/pii/S1352231020306865">Atmospheric Environment</a>
           Results. The inventory covered 133 pollutatns with monthly resolution.
-      - role: <b>Postdoc USP</b> <br> <a href="https://github.com/ibarraespinosa/ibarraespinosa.github.io/raw/master/pdf/USP_POST.pdf">CERTIFICATE</a>
+      - role: <b>Postdoc USP</b> <a href="https://github.com/ibarraespinosa/ibarraespinosa.github.io/raw/master/pdf/USP_POST.pdf">CERTIFICATE</a>
         time: 2017 - 2021
         company: Universidade de Sao Paulo, Sao Paulo, Brazil
         details: |

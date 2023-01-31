@@ -42,14 +42,14 @@ sidebar:
     interests:
       title: Interests
       info:
-        - item: DJ
-          link: https://www.instagram.com/djlowkeyfromasgard/
+        - item: GYM
+          link: 
 
         - item: Producer
           link: https://soundcloud.com/xhie
 
-        - item: Cooking
-          link: instantpot
+        - item: DJ
+          link: https://www.instagram.com/djlowkeyfromasgard/
 
 career-profile:
     title: Career Profile
@@ -107,15 +107,6 @@ experiences:
           for <a href="https://gml.noaa.gov/ccgg/obspack/data.php">NOAA CH4 Obspack GLOBALVIEW</a>.
           Then, it is used an inverse model based on <a href="https://gml.noaa.gov/ccgg/carbontracker-lagrange/doc/index.html">carbon-tracker lagranger</a>.
           I developed an R package named <a href="https://github.com/ibarraespinosa/robspackfilter">robspackfilter<a/>. 
-      - role: <b>Visiting Researcher NCAR</b> - <a href="https://ibarraespinosa.github.io/">PDF</a>
-        time: 2021 - Present
-        company: National Center for Atmospheric Research (NCAR), Boulder, Colorado, USA
-        details: |
-          This work consists in model air quality in south america
-          using the model Multi-Scale Infrastructure for Chemistry Modeling 
-          <a href="https://www2.acom.ucar.edu/sections/multi-scale-infrastructure-chemistry-modeling-musica">MUSICA</a>.
-          Currently I'm running global MUSICA with a zoom
-          over South America. 
       - role: <b>Postdoc IPEN</b> - <a href="https://ibarraespinosa.github.io/">PDF</a>
         time: 2021 - 2021
         company: Institute of Nuclear and Energetic Research (IPEN)
@@ -219,7 +210,7 @@ skills:
         level: 70%
 
       - name: Python
-        level: 40%
+        level: 30%
 
       - name: HTML5
         level: 40%

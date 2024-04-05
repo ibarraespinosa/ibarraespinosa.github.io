@@ -9,7 +9,7 @@ sidebar:
     # Profile information
     name: Sergio Ibarra-Espinosa
     tagline: Postdoctoral Associate
-    avatar: https://images.coframe.ai/images/66101841050c47fa0f18e059/66101841050c47fa0f18e05a  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+    avatar: composited_image_0.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
     email: sergio.ibarra-espinosa@noaa.gov

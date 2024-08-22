@@ -41,22 +41,46 @@ sidebar:
     interests:
       title: Interests
       info:
+        - item: Boxing
+          link: https://www.youtube.com/@IbarraEspinosa/shorts
+
         - item: GYM
           link: 
 
-        - item: Producer
-          link: https://soundcloud.com/xhie
+        - item: Music Producer
+          link: https://soundcloud.com/alt13/popular-tracks
+
+        - item: Cooking and baking
 
 career-profile:
     title: Career Profile
     summary: |
-      Post-Doctoral Associate at Global Monitoring Division (NOAA)
-      and CIRES (Colorado University).
-      During the past 19 years, I have studied air pollution.
-      I have been studying and estimating "a priori" emissions
-      modeling air quality and now I'm focused on 
-      the "posteriori" emissions. Also,
-      I have developed software in R and Fortran.
+      Hello, I'm Sergio Ibarra Espinosa. My journey into the world of air pollution began in 2004 when I embarked on my undergraduate studies in environmental engineering at the Universidad Tecnologica Metropolitana in Chile. During those formative years, I developed a keen interest in understanding the profound health effects of air pollution, setting the stage for my career.
+
+In 2008, while working for the National Center for the Environment in Chile, I delved into the intricacies of emissions inventories. This marked a pivotal moment in my career as I began to unravel the complex web of data and factors contributing to air pollution.
+
+My thirst for knowledge and passion for environmental issues led me to pursue a Master's degree in Environmental Planning at the prestigious Universidad de Chile. It was during this time that I honed my skills and gained a deeper understanding of the environmental challenges we face.
+
+In 2013, I embarked on a new chapter by pursuing a Ph.D. in Atmospheric Sciences at the Universidade de Sao Paulo in Brazil. This period not only expanded my expertise but also opened the door to the world of coding and software development. I began writing my own libraries and even developed several R packages, with one standout achievement being the creation of VEIN—a tool that has made a significant impact and garnered over 40,000 downloads worldwide.
+
+During my Ph.D., I was honored to receive the highly prestigious Becas Chile scholarship, a testament to my dedication and contributions to the field of atmospheric sciences.
+
+Following the completion of my Ph.D., I continued my academic journey with a postdoctoral position at the Universidad de Sao Paulo. This experience allowed me to further explore my research interests and expand my network within the scientific community.
+
+In 2019, I embarked on an international adventure by undertaking a postdoctoral position at the Chinese Academy of Sciences in Changchun, Jilin, P.R. China. This opportunity provided me with invaluable insights into global air quality issues and allowed me to collaborate with experts from diverse backgrounds.
+
+In 2022, I took on a new challenge as I began a postdoctoral position at NOAA GML (National Oceanic and Atmospheric Administration Global Monitoring Laboratory). In this role, I am focused on emissions inventories of greenhouse gases, using an innovative inverse modeling approach to better understand and combat climate change.
+
+My journey from an undergraduate student fascinated by air pollution's health effects to a seasoned researcher working on cutting-edge solutions for climate and environmental challenges has been nothing short of remarkable. I look forward to continuing my contributions to the field and making a positive impact on the world's air quality and climate.
+
+Current Research
+In my current research, I am delving into the intricate web of connections between the COVID-19 pandemic and methane emissions across the United States. The goal of my study is to discern both the direct and indirect impacts of this global health crisis on methane emissions, using an innovative inverse model approach.
+
+To achieve this, I have harnessed a wealth of data from the NOAA GML ObsPack ground and aircraft observations. This data serves as the foundation upon which I build my analysis. I've also incorporated various prior datasets, enhancing the robustness of my model and its ability to draw accurate conclusions.
+
+One of the key tools in my research arsenal is the HYSPLIT model. With this model, I obtain footprints that provide valuable insights into the association between methane fluxes and atmospheric concentrations. By meticulously crafting a domain over the US with one degree of resolution and generating monthly outputs, I am able to paint a comprehensive picture of how COVID-19 has impacted methane emissions throughout the country.
+
+This research not only sheds light on the complex interplay between a global pandemic and environmental factors but also has broader implications for understanding the sensitivity of greenhouse gas emissions to external shocks, ultimately aiding in the development of more resilient and sustainable policies for the future.
 education:
     title: Education
     info:

@@ -79,7 +79,6 @@ In my current research, I am delving into the intricate web of connections betwe
 To achieve this, I have harnessed a wealth of data from the NOAA GML ObsPack ground and aircraft observations. This data serves as the foundation upon which I build my analysis. I've also incorporated various prior datasets, enhancing the robustness of my model and its ability to draw accurate conclusions.
 
 One of the key tools in my research arsenal is the HYSPLIT model. With this model, I obtain footprints that provide valuable insights into the association between methane fluxes and atmospheric concentrations. By meticulously crafting a domain over the US with one degree of resolution and generating monthly outputs, I am able to paint a comprehensive picture of how COVID-19 has impacted methane emissions throughout the country.
-
 This research not only sheds light on the complex interplay between a global pandemic and environmental factors but also has broader implications for understanding the sensitivity of greenhouse gas emissions to external shocks, ultimately aiding in the development of more resilient and sustainable policies for the future.
 education:
     title: Education

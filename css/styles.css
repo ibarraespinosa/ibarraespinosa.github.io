@@ -682,3 +682,56 @@ h1, h2, h3, h4 {
     background: var(--primary-color);
     color: white;
 }
+
+/* Contact Form Styles */
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    transition: var(--transition-fast);
+    background-color: var(--light-color);
+    color: var(--text-color);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.2);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.btn-loading {
+    display: none;
+}
+
+.form-message {
+    margin-top: 20px;
+    padding: 12px 15px;
+    border-radius: var(--radius-sm);
+    display: none;
+}
+
+.form-message.success {
+    background-color: rgba(46, 204, 113, 0.2);
+    color: #2ecc71;
+    border: 1px solid #2ecc71;
+}
+
+.form-message.error {
+    background-color: rgba(231, 76, 60, 0.2);
+    color: #e74c3c;
+    border: 1px solid #e74c3c;
+}

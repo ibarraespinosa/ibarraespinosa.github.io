@@ -375,32 +375,25 @@
                             <p>Boulder, Colorado, USA</p>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-clock"></i>
-                        <div>
-                            <h3>Office Hours</h3>
-                            <p>Monday-Friday: 9am-5pm MST</p>
-                        </div>
-                    </div>
                 </div>
-                <form class="contact-form" id="contactForm">
+                <form id="contactForm" class="contact-form">
                     <div class="form-group">
-                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" id="email" placeholder="Your Email" required>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" id="subject" placeholder="Subject">
+                        <input type="text" id="subject" name="subject" placeholder="Subject">
                     </div>
                     <div class="form-group">
-                        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
                     </div>
                     <button type="submit" class="btn">
                         <span class="btn-text">Send Message</span>
                         <span class="btn-loading"><i class="fas fa-spinner fa-spin"></i></span>
                     </button>
-                    <div class="form-message"></div>
+                    <div id="formMessage" class="form-message"></div>
                 </form>
             </div>
         </div>

@@ -264,3 +264,67 @@ document.addEventListener('DOMContentLoaded', function() {
     // Run on scroll
     window.addEventListener('scroll', animateOnScroll);
 });
+
+// Contact Form Submission
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const form = this;
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const btnText = submitBtn.querySelector('.btn-text');
+    const btnLoading = submitBtn.querySelector('.btn-loading');
+    const formMessage = document.getElementById('formMessage');
+    
+    // Show loading state
+    btnText.style.display = 'none';
+    btnLoading.style.display = 'inline-block';
+    formMessage.style.display = 'none';
+    
+    // Form data
+    const formData = {
+        name: form.querySelector('#name').value,
+        email: form.querySelector('#email').value,
+        subject: form.querySelector('#subject').value,
+        message: form.querySelector('#message').value
+    };
+    
+    // Using Formspree for form submission (free service)
+    fetch('https://formspree.io/f/YOUR_FORMSPREE_ID', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+    })
+    .then(response => {
+        if (response.ok) {
+            return response.json();
+        } else {
+            throw new Error('Network response was not ok');
+        }
+    })
+    .then(data => {
+        // Show success message
+        formMessage.textContent = 'Thank you for your message! I will get back to you soon.';
+        formMessage.classList.add('success');
+        formMessage.style.display = 'block';
+        form.reset();
+    })
+    .catch(error => {
+        // Show error message
+        formMessage.textContent = 'There was a problem sending your message. Please try again later or email me directly.';
+        formMessage.classList.add('error');
+        formMessage.style.display = 'block';
+        console.error('Error:', error);
+    })
+    .finally(() => {
+        // Reset button state
+        btnText.style.display = 'inline-block';
+        btnLoading.style.display = 'none';
+        
+        // Hide message after 5 seconds
+        setTimeout(() => {
+            formMessage.style.display = 'none';
+        }, 5000);
+    });
+});

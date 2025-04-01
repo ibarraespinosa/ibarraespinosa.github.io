@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Blog | Sergio Ibarra-Espinosa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle">
+        <input type="checkbox" id="darkModeToggle">
+        <label for="darkModeToggle">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <span class="toggle-ball"></span>
+        </label>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">S.Ibarra-Espinosa</a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#research">Research</a></li>
+                <li><a href="index.html#publications">Publications</a></li>
+                <li><a href="index.html#software">Software</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="index.html#map">Locations</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <header class="blog-header">
+        <div class="container">
+            <h1>Research Blog</h1>
+            <p>Insights, updates, and thoughts on atmospheric science, emissions modeling, and data analysis</p>
+        </div>
+    </header>
+
+    <!-- Blog Content -->
+    <main class="blog-main">
+        <div class="container">
+            <!-- Blog Categories -->
+            <div class="blog-categories">
+                <h2>Categories</h2>
+                <div class="category-tags">
+                    <a href="#" class="category-tag active">All Posts</a>
+                    <a href="#" class="category-tag">Vehicular Emissions</a>
+                    <a href="#" class="category-tag">Climate Change</a>
+                    <a href="#" class="category-tag">Data Science</a>
+                    <a href="#" class="category-tag">Field Research</a>
+                    <a href="#" class="category-tag">Software Development</a>
+                </div>
+            </div>
+
+            <!-- Blog Search -->
+            <div class="blog-search">
+                <input type="text" placeholder="Search blog posts...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+
+            <!-- Featured Post -->
+            <div class="featured-post">
+                <article class="blog-card large">
+                    <div class="blog-image">
+                        <img src="images/blog-featured.jpg" alt="Featured Blog Post">
+                        <div class="blog-date">June 10, 2024</div>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Featured • Vehicular Emissions</span>
+                        <h2>Advancements in Urban Emissions Modeling with VEIN v1.0</h2>
+                        <p class="blog-excerpt">Exploring the major updates in VEIN version 1.0 and how they're revolutionizing the way we model urban vehicular emissions in developing cities. This release introduces new algorithms for traffic pattern analysis and improved chemical speciation profiles.</p>
+                        <div class="blog-meta">
+                            <span><i class="fas fa-clock"></i> 8 min read</span>
+                            <span><i class="fas fa-comments"></i> 12 comments</span>
+                        </div>
+                        <a href="post/advancements-in-urban-emissions-modeling.html" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Blog Posts Grid -->
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog-vein.jpg" alt="VEIN model">
+                        <div class="blog-date">May 15, 2024</div>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Vehicular Emissions</span>
+                        <h3>Advancements in the VEIN Model for Urban Emissions</h3>
+                        <p class="blog-excerpt">Exploring the latest updates to the VEIN model and how it's being used in cities worldwide to improve air quality assessments.</p>
+                        <div class="blog-meta">
+                            <span><i class="fas fa-clock"></i> 6 min read</span>
+                        </div>
+                        <a href="post/advancements-in-vein-model.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog-covid.jpg" alt="COVID-19 impact">
+                        <div class="blog-date">March 28, 2024</div>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Climate Change</span>
+                        <h3>COVID-19's Impact on Urban Air Quality</h3>
+                        <p class="blog-excerpt">Analyzing how lockdown measures affected emissions patterns and what this tells us about sustainable urban mobility.</p>
+                        <div class="blog-meta">
+                            <span><i class="fas fa-clock"></i> 10 min read</span>
+                        </div>
+                        <a href="post/covid-impact-on-air-quality.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog-methane.jpg" alt="Methane emissions">
+                        <div class="blog-date">February 10, 2024</div>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Climate Change</span>
+                        <h3>New Approaches to Methane Emission Quantification</h3>
+                        <p class="blog-excerpt">Discussing innovative methods for measuring and modeling methane fluxes at regional scales.</p>
+                        <div class="blog-meta">
+                            <span><i class="fas fa-clock"></i> 7 min read</span>
+                        </div>
+                        <a href="post/methane-emission-quantification.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog-africa.jpg" alt="African research">
+                        <div class="blog-date">January 22, 2024</div>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Field Research</span>
+                        <h3>Air Quality Challenges in African Megacities</h3>
+                        <p class="blog-excerpt">Insights from my recent fieldwork in Kampala, Uganda, examining unique air pollution challenges in rapidly growing cities.</p>
+                        <div class="blog-meta">
+                            <span><i class="fas fa-clock"></i> 9 min read</span>
+                        </div>
+                        <a href="post/africa-air-quality-challenges.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog-r.jpg" alt="R programming">
+                        <div class="blog-date">December 5, 2023</div>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Software Development</span>
+                        <h3>Optimizing R Packages for Atmospheric Science</h3>
+                        <p class="blog-excerpt">Best practices for developing high-performance R packages for environmental data analysis and modeling.</p>
+                        <div class="blog-meta">
+                            <span><i class="fas fa-clock"></i> 12 min read</span>
+                        </div>
+                        <a href="post/optimizing-r-packages.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog-brazil.jpg" alt="Brazil research">
+                        <div class="blog-date">November 18, 2023</div>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Vehicular Emissions</span>
+                        <h3>Ethanol Fuel Impacts on São Paulo's Air Quality</h3>
+                        <p class="blog-excerpt">Examining how Brazil's unique ethanol fuel program affects urban air pollution patterns and ozone formation.</p>
+                        <div class="blog-meta">
+                            <span><i class="fas fa-clock"></i> 8 min read</span>
+                        </div>
+                        <a href="post/ethanol-fuel-impacts.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <a href="#" class="page-link disabled"><i class="fas fa-chevron-left"></i> Previous</a>
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <span class="page-dots">...</span>
+                <a href="#" class="page-link">6</a>
+                <a href="#" class="page-link">Next <i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Newsletter Subscription -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated with My Research</h2>
+                <p>Subscribe to receive email updates about new publications, blog posts, and research activities.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+                <p class="small">I respect your privacy. Unsubscribe at any time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Dr. Sergio Ibarra-Espinosa</h3>
+                    <p>Atmospheric Scientist specializing in emissions inventories, climate modeling, and air pollution analysis.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#research">Research</a></li>
+                        <li><a href="index.html#publications">Publications</a></li>
+                        <li><a href="index.html#software">Software</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-envelope"></i> sergio.ibarra-espinosa@noaa.gov</p>
+                    <p><i class="fas fa-phone"></i> +1 (303) 525-1723</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dr. Sergio Ibarra-Espinosa. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://scholar.google.com.br/citations?user=8ohZGHEAAAJ&hl" target="_blank"><i class="fab fa-google"></i></a>
+                    <a href="https://github.com/ibarraespinosa" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://orcid.org/0000-0002-3162-1905" target="_blank"><i class="fab fa-orcid"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Blog-specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Category filter
+            const categoryTags = document.querySelectorAll('.category-tag');
+            categoryTags.forEach(tag => {
+                tag.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    categoryTags.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    // Here you would filter blog posts by category
+                    // For now we're just demonstrating the UI
+                });
+            });
+
+            // Search functionality
+            const searchInput = document.querySelector('.blog-search input');
+            const searchButton = document.querySelector('.blog-search button');
+            
+            searchButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                const searchTerm = searchInput.value.toLowerCase();
+                // Here you would filter blog posts by search term
+                // For now we're just demonstrating the UI
+                console.log('Searching for:', searchTerm);
+            });
+
+            // Newsletter form
+            const newsletterForm = document.querySelector('.newsletter-form');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const email = this.querySelector('input[type="email"]').value;
+                    // Here you would send the email to your newsletter service
+                    alert(`Thank you for subscribing with ${email}! You'll receive updates soon.`);
+                    this.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>

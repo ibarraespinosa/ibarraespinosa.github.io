@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Sergio Ibarra-Espinosa | Atmospheric Scientist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle">
+        <input type="checkbox" id="darkModeToggle">
+        <label for="darkModeToggle">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <span class="toggle-ball"></span>
+        </label>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">S.Ibarra-Espinosa</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#software">Software</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#map">Locations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Dr. Sergio Alejandro Ibarra-Espinosa</h1>
+                <h2>Atmospheric Scientist | Emissions Specialist | Data Scientist</h2>
+                <div class="hero-buttons">
+                    <a href="cv/cv_sergio_ibarra_espinosa.pdf" class="btn" download>
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i> Contact Me
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://scholar.google.com.br/citations?user=8ohZGHEAAAJ&hl" target="_blank"><i class="fab fa-google"></i></a>
+                    <a href="https://github.com/ibarraespinosa" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://orcid.org/0000-0002-3162-1905" target="_blank"><i class="fab fa-orcid"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/profile.jpg" alt="Dr. Sergio Ibarra-Espinosa">
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am an atmospheric scientist specializing in emissions inventories, climate modeling, and air pollution analysis. Currently working as a Postdoctoral Researcher at NOAA GML and CIRES/CU Boulder.</p>
+                    
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h3>Education</h3>
+                            <ul>
+                                <li>PhD in Atmospheric Sciences, USP (2017)</li>
+                                <li>MSc in Environmental Planning, U. Chile (2011)</li>
+                                <li>BSc in Environmental Science, UTEM (2007)</li>
+                            </ul>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-briefcase"></i>
+                            <h3>Experience</h3>
+                            <ul>
+                                <li>Postdoc at NOAA/CIRES (2022-present)</li>
+                                <li>Postdoc at Nuclear Energy Research Inst. (2021-2022)</li>
+                                <li>Postdoc at Chinese Academy of Sciences (2019)</li>
+                            </ul>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-code"></i>
+                            <h3>Skills</h3>
+                            <ul>
+                                <li>R, Python, Fortran</li>
+                                <li>WRF-Chem, VEIN, HYSPLIT</li>
+                                <li>Machine Learning</li>
+                                <li>Spatial Data Analysis</li>
+                            </ul>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-language"></i>
+                            <h3>Languages</h3>
+                            <ul>
+                                <li>Spanish (Native)</li>
+                                <li>Portuguese (Fluent)</li>
+                                <li>English (Advanced)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Research Interests</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <i class="fas fa-smog"></i>
+                    <h3>Air Pollution Modeling</h3>
+                    <p>Developing high-resolution emissions inventories and atmospheric models for urban areas.</p>
+                </div>
+                <div class="research-card">
+                    <i class="fas fa-car"></i>
+                    <h3>Vehicular Emissions</h3>
+                    <p>Bottom-up approaches for traffic emissions using the VEIN model.</p>
+                </div>
+                <div class="research-card">
+                    <i class="fas fa-globe-americas"></i>
+                    <h3>Climate Change</h3>
+                    <p>Analyzing CH₄ and CO₂ fluxes and their climate impacts.</p>
+                </div>
+                <div class="research-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Data Science</h3>
+                    <p>Applying statistical and machine learning methods to environmental data.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section">
+        <div class="container">
+            <h2 class="section-title">Selected Publications</h2>
+            
+            <!-- Publication Filters -->
+            <div class="publication-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="recent">Recent (2020-2024)</button>
+                <button class="filter-btn" data-filter="vehicular">Vehicular Emissions</button>
+                <button class="filter-btn" data-filter="climate">Climate Change</button>
+                <div class="search-box">
+                    <input type="text" id="pubSearch" placeholder="Search publications...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            
+            <div class="publication-list">
+                <div class="publication-item" data-category="recent climate">
+                    <div class="pub-info">
+                        <h3>COVID-19 impacts on the US methane emissions</h3>
+                        <p class="pub-authors">Ibarra-Espinosa S., Hu L., Miller S., et al.</p>
+                        <p class="pub-journal">Journal of Geophysical Research: Atmospheres (2024)</p>
+                        <div class="pub-tags">
+                            <span class="tag">Climate</span>
+                            <span class="tag">Methane</span>
+                        </div>
+                    </div>
+                    <a href="#" class="pub-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                
+                <div class="publication-item" data-category="recent vehicular">
+                    <div class="pub-info">
+                        <h3>Multiscale CO budget estimates across South America</h3>
+                        <p class="pub-authors">Lichtig P., Gaubert B., Ibarra-Espinosa S., et al.</p>
+                        <p class="pub-journal">JGR: Atmospheres (2024)</p>
+                        <div class="pub-tags">
+                            <span class="tag">Vehicular</span>
+                            <span class="tag">Modeling</span>
+                        </div>
+                    </div>
+                    <a href="#" class="pub-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                
+                <div class="publication-item" data-category="vehicular">
+                    <div class="pub-info">
+                        <h3>Changes in vehicular emissions during COVID-19 lockdown in São Paulo</h3>
+                        <p class="pub-authors">Ibarra-Espinosa S., Rehbein A., Freitas E.D., et al.</p>
+                        <p class="pub-journal">Frontiers in Sustainable Cities (2022)</p>
+                        <div class="pub-tags">
+                            <span class="tag">Vehicular</span>
+                            <span class="tag">COVID-19</span>
+                        </div>
+                    </div>
+                    <a href="#" class="pub-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                
+                <div class="publication-item" data-category="climate">
+                    <div class="pub-info">
+                        <h3>Effects of Evaporative Emissions Control Measurements on Ozone</h3>
+                        <p class="pub-authors">Ibarra-Espinosa S., Freitas E.D., Andrade M.D.F., et al.</p>
+                        <p class="pub-journal">Atmosphere (2022)</p>
+                        <div class="pub-tags">
+                            <span class="tag">Climate</span>
+                            <span class="tag">Ozone</span>
+                        </div>
+                    </div>
+                    <a href="#" class="pub-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                
+                <div class="publication-item" data-category="vehicular">
+                    <div class="pub-info">
+                        <h3>High resolution vehicular emissions in south-east Brazil</h3>
+                        <p class="pub-authors">Ibarra-Espinosa S., Yuoue R.Y., Ropkins K., et al.</p>
+                        <p class="pub-journal">Atmospheric Environment (2020)</p>
+                        <div class="pub-tags">
+                            <span class="tag">Vehicular</span>
+                            <span class="tag">Brazil</span>
+                        </div>
+                    </div>
+                    <a href="#" class="pub-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="https://scholar.google.com.br/citations?user=8ohZGHEAAAJ&hl" target="_blank" class="btn">View All Publications</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Software Section -->
+    <section id="software" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Software Development</h2>
+            <div class="software-grid">
+                <div class="software-card">
+                    <div class="software-icon">
+                        <i class="fab fa-r-project"></i>
+                    </div>
+                    <h3>VEIN</h3>
+                    <p>An R package for bottom-up vehicular emissions inventories with over 20,000 downloads.</p>
+                    <div class="software-stats">
+                        <span><i class="fas fa-star"></i> 150 GitHub stars</span>
+                        <span><i class="fas fa-download"></i> 20K+ downloads</span>
+                    </div>
+                    <a href="https://github.com/atmoschem/vein" target="_blank" class="btn-small">View on GitHub</a>
+                </div>
+                <div class="software-card">
+                    <div class="software-icon">
+                        <i class="fab fa-r-project"></i>
+                    </div>
+                    <h3>ELXPORT</h3>
+                    <p>R package to export emissions to atmospheric models with 17,000+ downloads.</p>
+                    <div class="software-stats">
+                        <span><i class="fas fa-star"></i> 80 GitHub stars</span>
+                        <span><i class="fas fa-download"></i> 17K+ downloads</span>
+                    </div>
+                    <a href="https://github.com/atmoschem/elxport" target="_blank" class="btn-small">View on GitHub</a>
+                </div>
+                <div class="software-card">
+                    <div class="software-icon">
+                        <i class="fab fa-r-project"></i>
+                    </div>
+                    <h3>robspack</h3>
+                    <p>Fast R package to read, process and plot NOAA/GML ObsPack data.</p>
+                    <div class="software-stats">
+                        <span><i class="fas fa-star"></i> 30 GitHub stars</span>
+                        <span><i class="fas fa-download"></i> 5K+ downloads</span>
+                    </div>
+                    <a href="https://github.com/noaa-gml/rtorf" target="_blank" class="btn-small">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section">
+        <div class="container">
+            <h2 class="section-title">Latest Blog Posts</h2>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog-vein.jpg" alt="VEIN model">
+                        <div class="blog-date">May 15, 2024</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Advancements in the VEIN Model for Urban Emissions</h3>
+                        <p>Exploring the latest updates to the VEIN model and how it's being used in cities worldwide to improve air quality assessments.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog-covid.jpg" alt="COVID-19 impact">
+                        <div class="blog-date">March 28, 2024</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>COVID-19's Impact on Urban Air Quality</h3>
+                        <p>Analyzing how lockdown measures affected emissions patterns and what this tells us about sustainable urban mobility.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog-methane.jpg" alt="Methane emissions">
+                        <div class="blog-date">February 10, 2024</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>New Approaches to Methane Emission Quantification</h3>
+                        <p>Discussing innovative methods for measuring and modeling methane fluxes at regional scales.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+            <div class="text-center">
+                <a href="blog.html" class="btn">View All Blog Posts</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Locations Map -->
+    <section id="map" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Research Locations</h2>
+            <div class="map-container">
+                <div id="researchMap"></div>
+                <div class="map-legend">
+                    <h4>Research Locations</h4>
+                    <ul>
+                        <li><span class="legend-icon" style="background-color: #e74c3c;"></span> Current Location</li>
+                        <li><span class="legend-icon" style="background-color: #3498db;"></span> Field Studies</li>
+                        <li><span class="legend-icon" style="background-color: #2ecc71;"></span> Collaborations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>sergio.ibarra-espinosa@noaa.gov</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+1 (303) 525-1723</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Boulder, Colorado, USA</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Office Hours</h3>
+                            <p>Monday-Friday: 9am-5pm MST</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loading"><i class="fas fa-spinner fa-spin"></i></span>
+                    </button>
+                    <div class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Dr. Sergio Ibarra-Espinosa</h3>
+                    <p>Atmospheric Scientist specializing in emissions inventories, climate modeling, and air pollution analysis.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#research">Research</a></li>
+                        <li><a href="#publications">Publications</a></li>
+                        <li><a href="#software">Software</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-envelope"></i> sergio.ibarra-espinosa@noaa.gov</p>
+                    <p><i class="fas fa-phone"></i> +1 (303) 525-1723</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dr. Sergio Ibarra-Espinosa. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://scholar.google.com.br/citations?user=8ohZGHEAAAJ&hl" target="_blank"><i class="fab fa-google"></i></a>
+                    <a href="https://github.com/ibarraespinosa" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://orcid.org/0000-0002-3162-1905" target="_blank"><i class="fab fa-orcid"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

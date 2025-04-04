@@ -851,40 +851,105 @@ body {
     transition: all 0.3s ease;
 }
 
-/* Hero Section */
+/* ===== HERO SECTION ===== */
 .hero {
-    padding: 150px 0 100px;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 180px 0 100px;
+    background: linear-gradient(135deg, 
+        var(--primary-color) 0%, 
+        var(--secondary-color) 100%);
     color: white;
-    margin-top: 70px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/hero-pattern.png') center/cover;
+    opacity: 0.1;
+    z-index: 0;
 }
 
 .hero .container {
+    position: relative;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 40px;
 }
 
 .hero-content {
     flex: 1;
-    padding-right: 50px;
+    max-width: 600px;
 }
 
 .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-    font-family: var(--font-main);
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 0.8s ease;
 }
 
 .hero h2 {
     font-size: 1.5rem;
     font-weight: 300;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    animation: fadeInUp 0.8s ease 0.2s forwards;
+    opacity: 0;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+    animation: fadeInUp 0.8s ease 0.4s forwards;
+    opacity: 0;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 30px;
+    background: white;
+    color: var(--primary-color);
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn-outline {
+    background: transparent;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-outline:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: white;
 }
 
 .social-links {
     display: flex;
-    margin-top: 30px;
+    gap: 15px;
+    animation: fadeInUp 0.8s ease 0.6s forwards;
+    opacity: 0;
 }
 
 .social-links a {
@@ -893,12 +958,11 @@ body {
     justify-content: center;
     width: 40px;
     height: 40px;
-    background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    margin-right: 15px;
+    background: rgba(255, 255, 255, 0.1);
     color: white;
     font-size: 1.2rem;
-    transition: all 0.3s;
+    transition: all 0.3s ease;
 }
 
 .social-links a:hover {
@@ -909,17 +973,49 @@ body {
 
 .hero-image {
     flex: 1;
-    text-align: center;
+    max-width: 500px;
+    animation: fadeIn 0.8s ease 0.8s forwards, float 6s ease-in-out infinite;
+    opacity: 0;
 }
 
 .hero-image img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
     border: 5px solid white;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
 
 /* Sections */
 .section {

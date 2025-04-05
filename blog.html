@@ -82,7 +82,7 @@
             <div class="featured-post">
                 <article class="blog-card large">
                     <div class="blog-image">
-                        <img src="images/blog-featured.jpg" alt="Featured Blog Post">
+                        <img src="images/blog-featured.jpg" alt="Featured Blog Post: Advancements in Urban Emissions Modeling with VEIN v1.0">
                         <div class="blog-date">June 10, 2024</div>
                     </div>
                     <div class="blog-content">
@@ -104,7 +104,7 @@
                 <article class="blog-card">
                     
                     <div class="blog-image">
-                        <img src="images/blog-vein.jpg" alt="VEIN model">
+                        <img src="images/blog-vein.jpg" alt="Blog Post: VEIN Model for Urban Emissions">
                         <div class="blog-date">May 15, 2024</div>
                     </div>
                     <div class="blog-content">
@@ -120,7 +120,7 @@
 
                 <article class="blog-card">
                     <div class="blog-image">
-                        <img src="images/blog-covid.jpg" alt="COVID-19 impact">
+                        <img src="images/blog-covid.jpg" alt="Blog Post: COVID-19's Impact on Urban Air Quality">
                         <div class="blog-date">March 28, 2024</div>
                     </div>
                     <div class="blog-content">
@@ -136,7 +136,7 @@
 
                 <article class="blog-card">
                     <div class="blog-image">
-                        <img src="images/blog-methane.jpg" alt="Methane emissions">
+                        <img src="images/blog-methane.jpg" alt="Blog Post: Methane Emission Quantification">
                         <div class="blog-date">February 10, 2024</div>
                     </div>
                     <div class="blog-content">
@@ -152,7 +152,7 @@
 
                 <article class="blog-card">
                     <div class="blog-image">
-                        <img src="images/blog-africa.jpg" alt="African research">
+                        <img src="images/blog-africa.jpg" alt="Blog Post: Air Quality Challenges in African Megacities">
                         <div class="blog-date">January 22, 2024</div>
                     </div>
                     <div class="blog-content">
@@ -168,7 +168,7 @@
 
                 <article class="blog-card">
                     <div class="blog-image">
-                        <img src="images/blog-r.jpg" alt="R programming">
+                        <img src="images/blog-r.jpg" alt="Blog Post: Optimizing R Packages for Atmospheric Science">
                         <div class="blog-date">December 5, 2023</div>
                     </div>
                     <div class="blog-content">
@@ -184,7 +184,7 @@
 
                 <article class="blog-card">
                     <div class="blog-image">
-                        <img src="images/blog-brazil.jpg" alt="Brazil research">
+                        <img src="images/blog-brazil.jpg" alt="Blog Post: Ethanol Fuel Impacts on São Paulo's Air Quality">
                         <div class="blog-date">November 18, 2023</div>
                     </div>
                     <div class="blog-content">
@@ -273,26 +273,44 @@
         document.addEventListener('DOMContentLoaded', function() {
             // Category filter
             const categoryTags = document.querySelectorAll('.category-tag');
+            const blogCards = document.querySelectorAll('.blog-card');
+
             categoryTags.forEach(tag => {
                 tag.addEventListener('click', function(e) {
                     e.preventDefault();
                     categoryTags.forEach(t => t.classList.remove('active'));
                     this.classList.add('active');
-                    // Here you would filter blog posts by category
-                    // For now we're just demonstrating the UI
+
+                    const category = this.textContent.trim();
+                    blogCards.forEach(card => {
+                        const cardCategory = card.querySelector('.blog-category').textContent.trim();
+                        if (category === 'All Posts' || cardCategory.includes(category)) {
+                            card.style.display = '';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
                 });
             });
 
             // Search functionality
             const searchInput = document.querySelector('.blog-search input');
             const searchButton = document.querySelector('.blog-search button');
-            
+
             searchButton.addEventListener('click', function(e) {
                 e.preventDefault();
                 const searchTerm = searchInput.value.toLowerCase();
-                // Here you would filter blog posts by search term
-                // For now we're just demonstrating the UI
-                console.log('Searching for:', searchTerm);
+
+                blogCards.forEach(card => {
+                    const title = card.querySelector('h3').textContent.toLowerCase();
+                    const excerpt = card.querySelector('.blog-excerpt').textContent.toLowerCase();
+
+                    if (title.includes(searchTerm) || excerpt.includes(searchTerm)) {
+                        card.style.display = '';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
             });
 
             // Newsletter form
@@ -301,7 +319,6 @@
                 newsletterForm.addEventListener('submit', function(e) {
                     e.preventDefault();
                     const email = this.querySelector('input[type="email"]').value;
-                    // Here you would send the email to your newsletter service
                     alert(`Thank you for subscribing with ${email}! You'll receive updates soon.`);
                     this.reset();
                 });

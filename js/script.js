@@ -44,78 +44,89 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Back to top button visibility
         const backToTop = document.getElementById('backToTop');
-        if (window.scrollY > 300) {
-            backToTop.classList.add('visible');
-        } else {
-            backToTop.classList.remove('visible');
+        if (backToTop) {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
         }
     });
     
     // Back to top button
-    document.getElementById('backToTop').addEventListener('click', function() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
+    const backToTopBtn = document.getElementById('backToTop');
+    if (backToTopBtn) {
+        backToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         });
-    });
+    }
     
     // Dark Mode Toggle
     const darkModeToggle = document.getElementById('darkModeToggle');
     const body = document.body;
     
     // Check for saved user preference
-    if (localStorage.getItem('darkMode') === 'enabled') {
-        body.setAttribute('data-theme', 'dark');
-        darkModeToggle.checked = true;
-    }
-    
-    darkModeToggle.addEventListener('change', function() {
-        if (this.checked) {
+    if (darkModeToggle) {
+        if (localStorage.getItem('darkMode') === 'enabled') {
             body.setAttribute('data-theme', 'dark');
-            localStorage.setItem('darkMode', 'enabled');
-        } else {
-            body.removeAttribute('data-theme');
-            localStorage.setItem('darkMode', 'disabled');
+            darkModeToggle.checked = true;
         }
-    });
+        
+        darkModeToggle.addEventListener('change', function() {
+            if (this.checked) {
+                body.setAttribute('data-theme', 'dark');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.removeAttribute('data-theme');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    }
     
     // Publication Filters
     const filterButtons = document.querySelectorAll('.filter-btn');
     const publicationItems = document.querySelectorAll('.publication-item');
     const searchInput = document.getElementById('pubSearch');
     
-    filterButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            // Remove active class from all buttons
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            // Add active class to clicked button
-            this.classList.add('active');
-            
-            const filterValue = this.getAttribute('data-filter');
-            filterPublications(filterValue);
+    if (filterButtons.length > 0 && publicationItems.length > 0) {
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                const filterValue = this.getAttribute('data-filter');
+                filterPublications(filterValue);
+            });
         });
-    });
-    
-    // Search functionality
-    searchInput.addEventListener('input', function() {
-        const searchTerm = this.value.toLowerCase();
-        const activeFilter = document.querySelector('.filter-btn.active').getAttribute('data-filter');
         
-        publicationItems.forEach(item => {
-            const text = item.textContent.toLowerCase();
-            const matchesSearch = text.includes(searchTerm);
-            const matchesFilter = activeFilter === 'all' || item.getAttribute('data-category').includes(activeFilter);
-            
-            if (matchesSearch && matchesFilter) {
-                item.style.display = 'flex';
-            } else {
-                item.style.display = 'none';
-            }
-        });
-    });
+        // Search functionality
+        if (searchInput) {
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                const activeFilter = document.querySelector('.filter-btn.active')?.getAttribute('data-filter') || 'all';
+                
+                publicationItems.forEach(item => {
+                    const text = item.textContent.toLowerCase();
+                    const matchesSearch = text.includes(searchTerm);
+                    const matchesFilter = activeFilter === 'all' || item.getAttribute('data-category').includes(activeFilter);
+                    
+                    if (matchesSearch && matchesFilter) {
+                        item.style.display = 'flex';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        }
+    }
     
     function filterPublications(filter) {
-        const searchTerm = searchInput.value.toLowerCase();
+        const searchTerm = searchInput ? searchInput.value.toLowerCase() : '';
         
         publicationItems.forEach(item => {
             const matchesFilter = filter === 'all' || item.getAttribute('data-category').includes(filter);
@@ -198,41 +209,63 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Form submission with loading state
+    // Form submission with formspree
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            const formData = new FormData(this);
             const submitBtn = this.querySelector('button[type="submit"]');
             const btnText = submitBtn.querySelector('.btn-text');
             const btnLoading = submitBtn.querySelector('.btn-loading');
-            const formMessage = this.querySelector('.form-message');
+            const formMessage = document.getElementById('formMessage');
             
             // Show loading state
             btnText.style.display = 'none';
             btnLoading.style.display = 'inline-block';
+            formMessage.style.display = 'none';
             
-            // Simulate form submission (replace with actual AJAX call)
-            setTimeout(() => {
-                // Hide loading state
-                btnText.style.display = 'inline-block';
-                btnLoading.style.display = 'none';
-                
+            // Use the actual Formspree ID from your form's action
+            const formAction = this.getAttribute('action');
+            
+            fetch(formAction, {
+                method: 'POST',
+                body: new FormData(this),
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    return response.json();
+                } else {
+                    throw new Error('Network response was not ok');
+                }
+            })
+            .then(data => {
                 // Show success message
                 formMessage.textContent = 'Thank you for your message! I will get back to you soon.';
                 formMessage.classList.add('success');
                 formMessage.style.display = 'block';
-                
-                // Reset form
-                this.reset();
+                contactForm.reset();
+            })
+            .catch(error => {
+                // Show error message
+                formMessage.textContent = 'There was a problem sending your message. Please try again later or email me directly.';
+                formMessage.classList.add('error');
+                formMessage.style.display = 'block';
+                console.error('Error:', error);
+            })
+            .finally(() => {
+                // Reset button state
+                btnText.style.display = 'inline-block';
+                btnLoading.style.display = 'none';
                 
                 // Hide message after 5 seconds
                 setTimeout(() => {
                     formMessage.style.display = 'none';
                 }, 5000);
-            }, 1500);
+            });
         });
     }
     
@@ -264,91 +297,3 @@ document.addEventListener('DOMContentLoaded', function() {
     // Run on scroll
     window.addEventListener('scroll', animateOnScroll);
 });
-
-// Contact Form Submission
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    const form = this;
-    const submitBtn = form.querySelector('button[type="submit"]');
-    const btnText = submitBtn.querySelector('.btn-text');
-    const btnLoading = submitBtn.querySelector('.btn-loading');
-    const formMessage = document.getElementById('formMessage');
-    
-    // Show loading state
-    btnText.style.display = 'none';
-    btnLoading.style.display = 'inline-block';
-    formMessage.style.display = 'none';
-    
-    // Form data
-    const formData = {
-        name: form.querySelector('#name').value,
-        email: form.querySelector('#email').value,
-        subject: form.querySelector('#subject').value,
-        message: form.querySelector('#message').value
-    };
-    
-    // Using Formspree for form submission (free service)
-    fetch('https://formspree.io/f/YOUR_FORMSPREE_ID', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-    })
-    .then(response => {
-        if (response.ok) {
-            return response.json();
-        } else {
-            throw new Error('Network response was not ok');
-        }
-    })
-    .then(data => {
-        // Show success message
-        formMessage.textContent = 'Thank you for your message! I will get back to you soon.';
-        formMessage.classList.add('success');
-        formMessage.style.display = 'block';
-        form.reset();
-    })
-    .catch(error => {
-        // Show error message
-        formMessage.textContent = 'There was a problem sending your message. Please try again later or email me directly.';
-        formMessage.classList.add('error');
-        formMessage.style.display = 'block';
-        console.error('Error:', error);
-    })
-    .finally(() => {
-        // Reset button state
-        btnText.style.display = 'inline-block';
-        btnLoading.style.display = 'none';
-        
-        // Hide message after 5 seconds
-        setTimeout(() => {
-            formMessage.style.display = 'none';
-        }, 5000);
-    });
-});
-
-// JavaScript for Dark Mode Toggle
-const darkModeToggle = document.getElementById('darkModeToggle');
-const body = document.body;
-
-// Check local storage for dark mode preference
-const darkModePreference = localStorage.getItem('darkMode');
-if (darkModePreference === 'enabled') {
-    body.classList.add('dark-mode');
-    darkModeToggle.checked = true;
-}
-
-// Toggle dark mode and save preference
-function toggleDarkMode() {
-    if (darkModeToggle.checked) {
-        body.classList.add('dark-mode');
-        localStorage.setItem('darkMode', 'enabled');
-    } else {
-        body.classList.remove('dark-mode');
-        localStorage.setItem('darkMode', 'disabled');
-    }
-}
-
-darkModeToggle.addEventListener('change', toggleDarkMode);

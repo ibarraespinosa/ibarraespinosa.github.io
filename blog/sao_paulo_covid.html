@@ -9,9 +9,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation (same as your main site) -->
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle">
+        <input type="checkbox" id="darkModeToggle">
+        <label for="darkModeToggle">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <span class="toggle-ball"></span>
+        </label>
+    </div>
+
+    <!-- Navigation -->
     <nav class="navbar">
-        <!-- Copy your navbar from index.html -->
+        <div class="container">
+            <a href="../index.html" class="logo">S.Ibarra-Espinosa</a>
+            <ul class="nav-links">
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#research">Research</a></li>
+                <li><a href="../index.html#publications">Publications</a></li>
+                <li><a href="../index.html#software">Software</a></li>
+                <li><a href="../blog.html" class="active">Blog</a></li>
+                <li><a href="../index.html#map">Locations</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </nav>
 
     <!-- Blog Post Header -->
@@ -19,11 +45,10 @@
         <div class="container">
             <div class="post-meta">
                 <span class="post-category">COVID-19</span>
-                <span class="post-date">April 3, 2025</span>
+                <span class="post-date">March 28, 2024</span>
                 <span class="post-read-time">6 min read</span>
             </div>
-            <h1>😷
-                São Paulo: COVID-19, Mobility, and Environmental Factorss</h1>
+            <h1>😷 São Paulo: COVID-19, Mobility, and Environmental Factors</h1>
             <div class="post-author">
                 <img src="../images/profile.jpg" alt="Dr. Sergio Ibarra-Espinosa">
                 <span>Dr. Sergio Ibarra-Espinosa</span>
@@ -37,20 +62,22 @@
             <img src="../images/blog-covid.jpg" alt="COVID" class="post-featured-image">
             
             <div class="post-body">
-
                 <audio controls>
                     <source src="../audio/covid.mp3" type="audio/mpeg">
-                  </audio>
+                    Your browser does not support the audio element.
+                </audio>
 
-                  Ibarra-Espinosa, S., de Freitas, E.D., Ropkins, K., Dominici, F. and Rehbein, A., 2022. Negative-Binomial and quasi-poisson regressions between COVID-19, mobility and environment in São Paulo, Brazil. Environmental research, 204, p.112369.
+                <p class="publication-reference">
+                    Ibarra-Espinosa, S., de Freitas, E.D., Ropkins, K., Dominici, F. and Rehbein, A., 2022. Negative-Binomial and quasi-poisson regressions between COVID-19, mobility and environment in São Paulo, Brazil. Environmental research, 204, p.112369.
                     <a href="https://doi.org/10.1016/j.envres.2021.112369" target="_blank">https://doi.org/10.1016/j.envres.2021.112369</a>
-                <!-- Your actual blog content goes here -->
+                </p>
+                
                 <p>This research article investigates the relationship 
                     between COVID-19 cases and deaths, population mobility, 
                     and environmental factors like air pollution and meteorology 
                     in São Paulo, Brazil. The study uses statistical models to 
                     quantify how changes in residential mobility and exposure to 
-                    pollutants such as PM2.5 and ozone are associated with .
+                    pollutants such as PM2.5 and ozone are associated with
                     fluctuations in COVID-19 infections and fatalities. Findings 
                     indicate that reduced mobility correlates with fewer cases and 
                     deaths, and increases in air pollution are linked to a higher 
@@ -71,10 +98,45 @@
         </div>
     </article>
 
-    <!-- Footer (same as your main site) -->
+    <!-- Footer -->
     <footer class="footer">
-        <!-- Copy your footer from index.html -->
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Dr. Sergio Ibarra-Espinosa</h3>
+                    <p>Atmospheric Scientist specializing in emissions inventories, climate modeling, and air pollution analysis.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html#about">About</a></li>
+                        <li><a href="../index.html#research">Research</a></li>
+                        <li><a href="../index.html#publications">Publications</a></li>
+                        <li><a href="../index.html#software">Software</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-envelope"></i> sergio.ibarra-espinosa@noaa.gov</p>
+                    <p><i class="fas fa-phone"></i> +1 (720) 449-3424</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dr. Sergio Ibarra-Espinosa. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://scholar.google.com.br/citations?user=8ohZGHEAAAJ&hl" target="_blank"><i class="fab fa-google"></i></a>
+                    <a href="https://github.com/ibarraespinosa" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://orcid.org/0000-0002-3162-1905" target="_blank"><i class="fab fa-orcid"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="../js/script.js"></script>
 </body>

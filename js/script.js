@@ -328,3 +328,27 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
         }, 5000);
     });
 });
+
+// JavaScript for Dark Mode Toggle
+const darkModeToggle = document.getElementById('darkModeToggle');
+const body = document.body;
+
+// Check local storage for dark mode preference
+const darkModePreference = localStorage.getItem('darkMode');
+if (darkModePreference === 'enabled') {
+    body.classList.add('dark-mode');
+    darkModeToggle.checked = true;
+}
+
+// Toggle dark mode and save preference
+function toggleDarkMode() {
+    if (darkModeToggle.checked) {
+        body.classList.add('dark-mode');
+        localStorage.setItem('darkMode', 'enabled');
+    } else {
+        body.classList.remove('dark-mode');
+        localStorage.setItem('darkMode', 'disabled');
+    }
+}
+
+darkModeToggle.addEventListener('change', toggleDarkMode);

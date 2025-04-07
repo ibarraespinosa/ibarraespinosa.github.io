@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Sergio Ibarra-Espinosa | Atmospheric Scientist</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css">
+    <link rel="stylesheet" href="css/leaflet.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
@@ -17,15 +17,20 @@
         gtag('config', 'G-67G23W9M6B');
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Added meta tags for SEO -->
+    <meta name="description" content="Dr. Sergio Ibarra-Espinosa is an atmospheric scientist specializing in emissions inventories, climate modeling, and air pollution analysis.">
+    <meta name="keywords" content="Atmospheric Scientist, Emissions Specialist, Climate Modeling, Air Pollution, Data Science">
+    <meta name="author" content="Dr. Sergio Ibarra-Espinosa">
+    <meta name="robots" content="index, follow">
 </head>
 <body>
     <!-- Dark Mode Toggle -->
     <div class="dark-mode-toggle">
-        <input type="checkbox" id="darkModeToggle">
+        <input type="checkbox" id="darkModeToggle" aria-label="Toggle dark mode">
         <label for="darkModeToggle">
-            <i class="fas fa-sun"></i>
-            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun" aria-hidden="true"></i>
+            <i class="fas fa-moon" aria-hidden="true"></i>
             <span class="toggle-ball"></span>
         </label>
     </div>
@@ -33,17 +38,17 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <a href="#" class="logo">Dr. Sergio Ibarra-Espinosa</a>
+            <a href="#" class="logo" aria-label="Homepage">Dr. Sergio Ibarra-Espinosa</a>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#software">Software</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#map">Locations</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" aria-label="About section">About</a></li>
+                <li><a href="#research" aria-label="Research section">Research</a></li>
+                <li><a href="#publications" aria-label="Publications section">Publications</a></li>
+                <li><a href="#software" aria-label="Software section">Software</a></li>
+                <li><a href="#blog" aria-label="Blog section">Blog</a></li>
+                <li><a href="#map" aria-label="Locations section">Locations</a></li>
+                <li><a href="#contact" aria-label="Contact section">Contact</a></li>
             </ul>
-            <div class="hamburger">
+            <div class="hamburger" aria-label="Toggle navigation menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -73,7 +78,7 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="images/profile.jpg" alt="Dr. Sergio Ibarra-Espinosa">
+                <img src="images/profile.jpg" alt="Portrait of Dr. Sergio Ibarra-Espinosa">
             </div>
         </div>
     </header>
@@ -230,6 +235,20 @@
                     </div>
                     <a href="#" class="pub-link"><i class="fas fa-external-link-alt"></i></a>
                 </div>
+                
+                <!-- Added a new publication -->
+                <div class="publication-item" data-category="climate">
+                    <div class="pub-info">
+                        <h3>Advances in Methane Emission Modeling</h3>
+                        <p class="pub-authors">Ibarra-Espinosa S., et al.</p>
+                        <p class="pub-journal">Environmental Research Letters (2025)</p>
+                        <div class="pub-tags">
+                            <span class="tag">Climate</span>
+                            <span class="tag">Methane</span>
+                        </div>
+                    </div>
+                    <a href="#" class="pub-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
             </div>
             
             <div class="text-center">
@@ -321,6 +340,19 @@
                         <h3>New Approaches to Methane Emission Quantification</h3>
                         <p>Discussing innovative methods for measuring and modeling methane fluxes at regional scales.</p>
                         <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <!-- Added a new blog post -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog-methane.jpg" alt="Methane emissions">
+                        <div class="blog-date">April 1, 2025</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Innovative Techniques for Methane Emission Reduction</h3>
+                        <p>Exploring cutting-edge methods to mitigate methane emissions and their impact on climate change.</p>
+                        <a href="blog/methane-emission-reduction.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
             </div>
@@ -442,7 +474,7 @@
     </button>
 
     <!-- Scripts -->
-    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="js/leaflet.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

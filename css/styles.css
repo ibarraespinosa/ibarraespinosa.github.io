@@ -816,6 +816,7 @@ body {
     font-family: var(--font-main);
     transition: color 0.3s;
     position: relative;
+    overflow: hidden;
 }
 
 .nav-links a:hover {
@@ -1020,6 +1021,14 @@ body {
 /* Sections */
 .section {
     padding: 80px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .section-title {
@@ -1451,6 +1460,59 @@ body {
     
     .section-title {
         font-size: 1.8rem;
+    }
+}
+
+/* Responsive Design Enhancements */
+
+/* General styles for smaller screens */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .research-grid, .software-grid, .blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .publication-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* Styles for very small screens */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero h2 {
+        font-size: 1.2rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 10px 15px;
     }
 }
 

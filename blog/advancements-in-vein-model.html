@@ -69,6 +69,13 @@
                 
                 <p>I'm excited to announce significant advancements in the VEIN (Vehicular Emissions INventory) model, an open-source R package designed for estimating vehicular emissions at high spatial and temporal resolution. The latest version brings substantial improvements to computational efficiency and modeling capabilities.</p>
                 
+                <div class="image-gallery">
+                    <figure>
+                        <img src="../images/carros_sp.jpg" alt="Traffic in São Paulo" class="post-image">
+                        <figcaption>Heavy traffic in São Paulo, Brazil - a key study area for the VEIN model</figcaption>
+                    </figure>
+                </div>
+                
                 <h2>New Features in Version 1.0</h2>
                 <p>The updated VEIN model now includes:</p>
                 <ul>
@@ -89,6 +96,41 @@
                 </ul>
                 
                 <p>These case studies highlight VEIN's versatility in addressing complex urban air quality challenges across different geographical and socioeconomic contexts.</p>
+                
+                <h2>VEIN Version History</h2>
+                <p>The VEIN model has evolved significantly since its inception. Here's a look at some key developments:</p>
+                
+                <h3>Origins (2016-2017)</h3>
+                <p>VEIN began as a collection of R scripts called "remIAG" before its official release. The initial paper describing the methodology was published in the Journal of Earth Sciences & Geotechnical Engineering.</p>
+                
+                <h3>Early Versions (0.2.x - 0.3.x)</h3>
+                <ul>
+                    <li>Added support for emissions calculations in various units (kg)</li>
+                    <li>Implemented NMHC speciation for industrial and buildings sources</li>
+                    <li>Improved wear emissions calculations with ef_wear and emis_wear functions</li>
+                    <li>Added age distribution functions with default naming conventions</li>
+                    <li>Fixed critical bugs in spatial processing and emissions grid generation</li>
+                </ul>
+                
+                <h3>Middle Versions (0.6.x - 0.7.x)</h3>
+                <ul>
+                    <li>Added split_emis functionality (v0.6.1)</li>
+                    <li>Introduced PM characteristics including Active Surface measurements</li>
+                    <li>Enhanced emis_grid to support evaluated parsed text operations ("sum", "mean", etc.)</li>
+                    <li>Fixed projection issues with various emission factors</li>
+                    <li>Improved handling of NA and NaN values in grid calculations</li>
+                </ul>
+                
+                <h3>Recent Versions (0.9.x and beyond)</h3>
+                <ul>
+                    <li>Added speciation for liquid fuels (E25, E100, G)</li>
+                    <li>Incorporated hybrid gasoline and diesel emission factors for Chinese vehicles</li>
+                    <li>Developed specialized projects for various regions (e.g., brazil_bu_chem)</li>
+                    <li>Added PM2.5 speciation for Light-Duty Vehicles (LDV) and Heavy-Duty Vehicles (HDV)</li>
+                    <li>Enhanced integration with atmospheric chemistry models</li>
+                </ul>
+                
+                <p>This continuous development has made VEIN one of the most comprehensive tools for vehicular emissions modeling, especially for regions with limited data availability.</p>
                 
                 <h2>Future Developments</h2>
                 <p>Looking ahead, we're working on several exciting enhancements:</p>

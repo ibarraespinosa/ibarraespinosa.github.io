@@ -167,91 +167,91 @@
     <section id="publications" class="section">
         <div class="container">
             <h2 class="section-title">Selected Publications</h2>
-            
-            <!-- Publication Filters -->
+
+            <!-- Publication Filters (Keep or remove based on preference for index page) -->
             <div class="publication-filters">
                 <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="recent">Recent (2020-2024)</button>
-                <button class="filter-btn" data-filter="vehicular">Vehicular Emissions</button>
-                <button class="filter-btn" data-filter="climate">Climate Change</button>
-                <div class="search-box">
-                    <input type="text" id="pubSearch" placeholder="Search publications...">
-                    <i class="fas fa-search"></i>
-                </div>
+                <button class="filter-btn" data-filter="recent">Recent</button>
+                <button class="filter-btn" data-filter="vehicular">Vehicular</button>
+                <button class="filter-btn" data-filter="software">Software</button>
+                <!-- Removed search box from index page for simplicity -->
             </div>
-            
+
             <div class="publication-list">
-                
-               
-                <div class="publication-item" data-category="recent vehicular">
+                <!-- Replace with updated selected publications -->
+                <div class="publication-item" data-category="recent software climate">
                     <div class="pub-info">
-                        <h3>Multiscale CO budget estimates across South America</h3>
-                        <p class="pub-authors">Lichtig P., Gaubert B., Ibarra-Espinosa S., et al.</p>
-                        <p class="pub-journal">JGR: Atmospheres (2024)</p>
+                        <h3>rtorf: R Tools for Observations, Receptors and Footprints</h3>
+                        <p class="pub-authors">Ibarra-Espinosa S, et al.</p>
+                        <p class="pub-journal">Journal of Open Source Software (2024)</p>
                         <div class="pub-tags">
+                            <span class="tag">Software</span>
+                            <span class="tag">R Package</span>
+                            <span class="tag">Climate</span>
+                        </div>
+                    </div>
+                    <a href="https://doi.org/10.21105/joss.06271" class="pub-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+
+                <div class="publication-item" data-category="recent vehicular climate">
+                    <div class="pub-info">
+                        <h3>IAMBEE v1. 0: an integrated modeling system...</h3>
+                        <p class="pub-authors">Ibarra-Espinosa S, et al.</p>
+                        <p class="pub-journal">Geoscientific Model Development (2023)</p>
+                         <div class="pub-tags">
                             <span class="tag">Vehicular</span>
+                            <span class="tag">Air Quality</span>
                             <span class="tag">Modeling</span>
                         </div>
                     </div>
-                    <a href="#" class="pub-link"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://doi.org/10.5194/gmd-16-1153-2023" class="pub-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                 </div>
-                
-                <div class="publication-item" data-category="vehicular">
+
+                 <div class="publication-item" data-category="recent vehicular">
                     <div class="pub-info">
-                        <h3>Changes in vehicular emissions during COVID-19 lockdown in São Paulo</h3>
-                        <p class="pub-authors">Ibarra-Espinosa S., Rehbein A., Freitas E.D., et al.</p>
-                        <p class="pub-journal">Frontiers in Sustainable Cities (2022)</p>
+                        <h3>High-resolution spatial and temporal road traffic emissions in Guangzhou...</h3>
+                        <p class="pub-authors">Ibarra-Espinosa S, et al.</p>
+                        <p class="pub-journal">Scientific Data (2023)</p>
                         <div class="pub-tags">
+                            <span class="tag">Vehicular</span>
+                            <span class="tag">Emissions</span>
+                            <span class="tag">China</span>
+                        </div>
+                    </div>
+                    <a href="https://doi.org/10.1038/s41597-023-02122-1" class="pub-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+
+                 <div class="publication-item" data-category="recent vehicular climate">
+                    <div class="pub-info">
+                        <h3>Changes in vehicular emissions due to COVID-19 partial lockdown...</h3>
+                        <p class="pub-authors">Ibarra-Espinosa S, et al.</p>
+                        <p class="pub-journal">Frontiers in Sustainable Cities (2022)</p>
+                         <div class="pub-tags">
                             <span class="tag">Vehicular</span>
                             <span class="tag">COVID-19</span>
-                        </div>
-                    </div>
-                    <a href="#" class="pub-link"><i class="fas fa-external-link-alt"></i></a>
-                </div>
-                
-                <div class="publication-item" data-category="climate">
-                    <div class="pub-info">
-                        <h3>Effects of Evaporative Emissions Control Measurements on Ozone</h3>
-                        <p class="pub-authors">Ibarra-Espinosa S., Freitas E.D., Andrade M.D.F., et al.</p>
-                        <p class="pub-journal">Atmosphere (2022)</p>
-                        <div class="pub-tags">
-                            <span class="tag">Climate</span>
-                            <span class="tag">Ozone</span>
-                        </div>
-                    </div>
-                    <a href="#" class="pub-link"><i class="fas fa-external-link-alt"></i></a>
-                </div>
-                
-                <div class="publication-item" data-category="vehicular">
-                    <div class="pub-info">
-                        <h3>High resolution vehicular emissions in south-east Brazil</h3>
-                        <p class="pub-authors">Ibarra-Espinosa S., Yuoue R.Y., Ropkins K., et al.</p>
-                        <p class="pub-journal">Atmospheric Environment (2020)</p>
-                        <div class="pub-tags">
-                            <span class="tag">Vehicular</span>
                             <span class="tag">Brazil</span>
                         </div>
                     </div>
-                    <a href="#" class="pub-link"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://doi.org/10.3389/frsc.2022.803501" class="pub-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                 </div>
-                
-                <!-- Added a new publication -->
-                <div class="publication-item" data-category="climate">
+
+                 <div class="publication-item" data-category="vehicular software">
                     <div class="pub-info">
-                        <h3>Advances in Methane Emission Modeling</h3>
-                        <p class="pub-authors">Ibarra-Espinosa S., et al.</p>
-                        <p class="pub-journal">Environmental Research Letters (2025)</p>
-                        <div class="pub-tags">
-                            <span class="tag">Climate</span>
-                            <span class="tag">Methane</span>
+                        <h3>VEIN v0. 2.2: an R package for bottom-up vehicular emissions inventories</h3>
+                        <p class="pub-authors">Ibarra-Espinosa S, et al.</p>
+                        <p class="pub-journal">Geoscientific Model Development (2018)</p>
+                         <div class="pub-tags">
+                            <span class="tag">Vehicular</span>
+                            <span class="tag">Software</span>
+                            <span class="tag">R Package</span>
                         </div>
                     </div>
-                    <a href="#" class="pub-link"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://doi.org/10.5194/gmd-11-2209-2018" class="pub-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
-            
+
             <div class="text-center">
-                <a href="https://scholar.google.com.br/citations?user=8ohZGHEAAAJ&hl" target="_blank" class="btn">View All Publications</a>
+                <a href="publications.html" class="btn">View All Publications</a>
             </div>
         </div>
     </section>

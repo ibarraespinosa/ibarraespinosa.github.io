@@ -90,52 +90,73 @@ document.addEventListener('DOMContentLoaded', function() {
     const filterButtons = document.querySelectorAll('.filter-btn');
     const publicationItems = document.querySelectorAll('.publication-item');
     const searchInput = document.getElementById('pubSearch');
-    
-    if (filterButtons.length > 0 && publicationItems.length > 0) {
+    const publicationListContainer = document.querySelector('.publication-list'); // General container selector
+
+    if (filterButtons.length > 0 && publicationItems.length > 0 && publicationListContainer) {
         filterButtons.forEach(button => {
             button.addEventListener('click', function() {
                 // Remove active class from all buttons
                 filterButtons.forEach(btn => btn.classList.remove('active'));
                 // Add active class to clicked button
                 this.classList.add('active');
-                
+
                 const filterValue = this.getAttribute('data-filter');
                 filterPublications(filterValue);
             });
         });
-        
+
         // Search functionality
         if (searchInput) {
             searchInput.addEventListener('input', function() {
-                const searchTerm = this.value.toLowerCase();
                 const activeFilter = document.querySelector('.filter-btn.active')?.getAttribute('data-filter') || 'all';
-                
-                publicationItems.forEach(item => {
-                    const text = item.textContent.toLowerCase();
-                    const matchesSearch = text.includes(searchTerm);
-                    const matchesFilter = activeFilter === 'all' || item.getAttribute('data-category').includes(activeFilter);
-                    
-                    if (matchesSearch && matchesFilter) {
-                        item.style.display = 'flex';
-                    } else {
-                        item.style.display = 'none';
-                    }
-                });
+                filterPublications(activeFilter); // Reuse filter function on search input
             });
         }
+
+        // Initial filter application on load
+        const initialActiveFilter = document.querySelector('.filter-btn.active')?.getAttribute('data-filter') || 'all';
+        filterPublications(initialActiveFilter);
     }
-    
+
     function filterPublications(filter) {
         const searchTerm = searchInput ? searchInput.value.toLowerCase() : '';
-        
+        const pubYears = publicationListContainer.querySelectorAll('.pub-year'); // Select year headers within the list
+        let visibleItemsInYear = {}; // Track visibility per year
+
+        // Initialize tracker
+        pubYears.forEach(yearHeader => {
+            visibleItemsInYear[yearHeader.textContent] = false;
+        });
+
         publicationItems.forEach(item => {
-            const matchesFilter = filter === 'all' || item.getAttribute('data-category').includes(filter);
-            const matchesSearch = item.textContent.toLowerCase().includes(searchTerm);
-            
+            const categories = item.dataset.category ? item.dataset.category.split(' ') : [];
+            const textContent = item.textContent.toLowerCase();
+
+            const matchesFilter = filter === 'all' || categories.includes(filter) || (filter === 'recent' && categories.includes('recent')); // Handle 'recent' specifically if used
+            const matchesSearch = searchTerm === '' || textContent.includes(searchTerm);
+
             if (matchesFilter && matchesSearch) {
-                item.style.display = 'flex';
+                item.style.display = 'flex'; // Or 'block' or '' depending on original display style
+                 // Find the preceding year header and mark it as having visible items
+                 let currentElement = item.previousElementSibling;
+                 while (currentElement) {
+                     if (currentElement.classList.contains('pub-year')) {
+                         visibleItemsInYear[currentElement.textContent] = true;
+                         break;
+                     }
+                     currentElement = currentElement.previousElementSibling;
+                 }
             } else {
                 item.style.display = 'none';
+            }
+        });
+
+        // Show/hide year headers based on visibility of their items
+        pubYears.forEach(yearHeader => {
+            if (visibleItemsInYear[yearHeader.textContent]) {
+                yearHeader.style.display = 'block';
+            } else {
+                yearHeader.style.display = 'none';
             }
         });
     }

@@ -1312,3 +1312,7 @@ h1, h2, h3, h4 {
         padding: 10px 15px;
     }
 }
+
+pp {
+    margin-bottom: 5px; /* Adjust this value as needed. 0px removes it entirely. */
+  }

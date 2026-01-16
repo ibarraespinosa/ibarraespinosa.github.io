@@ -24,16 +24,22 @@ document.addEventListener('DOMContentLoaded', function() {
     // Smooth Scrolling
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            const targetSector = document.querySelector(targetId);
+            const href = this.getAttribute('href');
+            if (!href) return;
+
+            // Try to find the element on the current page
+            // If the href is "index.html#software", we only want the "#software" part for querySelector
+            const hash = href.includes('#') ? href.substring(href.indexOf('#')) : null;
             
-            if (targetSector) {
-                const sidebarWidth = window.innerWidth > 768 ? 0 : 0; // Adjust if needed
-                window.scrollTo({
-                    top: targetSector.offsetTop - 20,
-                    behavior: 'smooth'
-                });
+            if (hash) {
+                const targetSector = document.querySelector(hash);
+                if (targetSector) {
+                    e.preventDefault();
+                    window.scrollTo({
+                        top: targetSector.offsetTop - 20,
+                        behavior: 'smooth'
+                    });
+                }
             }
         });
     });

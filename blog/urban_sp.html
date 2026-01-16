@@ -11,139 +11,98 @@
 <body>
     <!-- Dark Mode Toggle -->
     <div class="dark-mode-toggle">
-        <input type="checkbox" id="darkModeToggle">
+        <input type="checkbox" id="darkModeToggle" aria-label="Toggle dark mode">
         <label for="darkModeToggle">
-            <i class="fas fa-sun"></i>
-            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun" aria-hidden="true"></i>
+            <i class="fas fa-moon" aria-hidden="true"></i>
             <span class="toggle-ball"></span>
         </label>
     </div>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="../index.html" class="logo">S.Ibarra-Espinosa</a>
-            <ul class="nav-links">
-                <li><a href="../index.html#about">About</a></li>
-                <li><a href="../index.html#research">Research</a></li>
-                <li><a href="../index.html#publications">Publications</a></li>
-                <li><a href="../index.html#software">Software</a></li>
-                <li><a href="../blog.html" class="active">Blog</a></li>
-                <li><a href="../index.html#map">Locations</a></li>
-                <li><a href="../index.html#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Blog Post Header -->
-    <header class="post-header">
-        <div class="container">
-            <div class="post-meta">
-                <span class="post-category">COVID-19</span>
-                <span class="post-date">April 8, 2025</span>
-                <span class="post-read-time">7 min read</span>
-            </div>
-            <h1>🌳 Urban Green Areas, Air Quality, and COVID-19 in São Paulo</h1>
-            <div class="post-author">
-                <img src="../images/profile.jpg" alt="Dr. Sergio Ibarra-Espinosa">
-                <span>Dr. Sergio Ibarra-Espinosa</span>
-            </div>
-        </div>
-    </header>
-
-    <!-- Blog Post Content -->
-    <article class="post-content">
-        <div class="container">
-            <img src="../images/urban_sp.jpeg" alt="COVID" class="post-featured-image">
-            
-            <div class="post-body">
-                <audio controls>
-                    <source src="../audio/urban_sp.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-
-                <p class="publication-reference">
-                    Pimiento-Quiroga, N.A., Prist, P.R., Ibarra-Espinosa, S., Barrozo, L.V. and Metzger, J.P., 2025. Air regulation service is affected by green areas cover and fragmentation: An analysis using demand, supply and flow during COVID-19 quarantine. Landscape and Urban Planning, 254, p.105230.
-                    <a href="https://doi.org/10.1016/j.landurbplan.2024.105230" target="_blank">https://doi.org/10.1016/j.landurbplan.2024.105230</a>
-                </p>
-                
-                <p>This research paper examines how urban green spaces 
-                    impact air quality regulation in São Paulo, Brazil, 
-                    by analyzing the interplay of vegetation cover 
-                    (supply), vehicle emissions (demand), and pollutant 
-                    movement (flow) during the COVID-19 quarantine. The 
-                    study found that greater green area coverage and 
-                    lower vehicular emissions improved air quality, 
-                    particularly during periods of stricter quarantine. 
-                    Interestingly, the spatial arrangement of green areas, 
-                    specifically less fragmentation, generally enhanced 
-                    air pollution reduction, and these benefits extended 
-                    up to one kilometer from pollution sources. The 
-                    findings underscore the importance of both expanding 
-                    and strategically managing urban green infrastructure 
-                    alongside emission reduction strategies to improve air 
-                    quality in megacities.
-                </p>
-                <p>audio and summary <a href="https://notebooklm.google/">notebookLM</a></p>
+    <!-- Layout Wrapper -->
+    <div class="layout-wrapper">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-profile">
+                    <img src="../images/profile.jpg" alt="Dr. Sergio Ibarra-Espinosa">
+                </div>
+                <h1 class="sidebar-name">Dr. Sergio Ibarra-Espinosa</h1>
+                <p class="sidebar-title">Senior Atmospheric Scientist</p>
             </div>
             
-            <div class="post-footer">
-                <div class="post-tags">
-                    <a href="#">#EmissionsModeling</a>
-                    <a href="#">#UrbanAirQuality</a>
-                    <a href="#">#RProgramming</a>
-                </div>
-                <a href="../blog.html" class="btn">Back to Blog</a>
-            </div>
-        </div>
-    </article>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="../index.html#dashboard"><i class="fas fa-th-large"></i> Dashboard</a></li>
+                    <li><a href="../index.html#research"><i class="fas fa-flask"></i> Research</a></li>
+                    <li><a href="../blog.html" class="active"><i class="fas fa-book"></i> Blog</a></li>
+                    <li><a href="../index.html#publications"><i class="fas fa-book-open"></i> Publications</a></li>
+                    <li><a href="../index.html#software"><i class="fas fa-code"></i> Software</a></li>
+                    <li><a href="../index.html#hobbies"><i class="fas fa-heart"></i> Interests</a></li>
+                    <li><a href="../index.html#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-about">
-                    <h3>Dr. Sergio Ibarra-Espinosa</h3>
-                    <p>Atmospheric Scientist specializing in emissions inventories, climate modeling, and air pollution analysis.</p>
-                </div>
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="../index.html#about">About</a></li>
-                        <li><a href="../index.html#research">Research</a></li>
-                        <li><a href="../index.html#publications">Publications</a></li>
-                        <li><a href="../index.html#software">Software</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h3>Contact</h3>
-                    <p><i class="fas fa-envelope"></i> sergio.ibarra-espinosa@noaa.gov</p>
-                    <p><i class="fas fa-phone"></i> +1 (720) 449-3424</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Dr. Sergio Ibarra-Espinosa. All rights reserved.</p>
-                <div class="footer-social">
-                    <a href="https://scholar.google.com.br/citations?user=8ohZGHEAAAJ&hl" target="_blank"><i class="fab fa-google"></i></a>
+            <div class="sidebar-footer">
+                <div class="sidebar-social">
+                    <a href="https://scholar.google.com/citations?user=8ohZGHEAAAAJ" target="_blank"><i class="fab fa-google"></i></a>
                     <a href="https://github.com/ibarraespinosa" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="https://orcid.org/0000-0002-3162-1905" target="_blank"><i class="fab fa-orcid"></i></a>
-                    <!-- TODO: Add specific LinkedIn profile URL -->
-                    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/sibarra" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </div>
+                <p>&copy; 2026 Dr. Sergio Ibarra-Espinosa</p>
             </div>
-        </div>
-    </footer>
+        </aside>
 
-    <!-- Back to Top Button -->
-    <button id="backToTop" class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <article class="post-article-content">
+                <header class="post-header-minimal">
+                    <div class="post-meta-minimal">April 8, 2025 • Climate Change</div>
+                    <h1>🌳 Urban Green Areas, Air Quality, and COVID-19 in São Paulo</h1>
+                </header>
 
+                <div class="post-featured-media">
+                    <img src="../images/urban_sp.jpeg" alt="Urban Green Areas in São Paulo">
+                </div>
+
+                <div class="post-body-text">
+                    <audio controls>
+                        <source src="../audio/urban_sp.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+
+                    <div class="publication-box">
+                        Pimiento-Quiroga, N.A., Prist, P.R., Ibarra-Espinosa, S., Barrozo, L.V. and Metzger, J.P., 2025. Air regulation service is affected by green areas cover and fragmentation: An analysis using demand, supply and flow during COVID-19 quarantine. Landscape and Urban Planning, 254, p.105230.
+                        <br>
+                        <a href="https://doi.org/10.1016/j.landurbplan.2024.105230" target="_blank">https://doi.org/10.1016/j.landurbplan.2024.105230</a>
+                    </div>
+
+                    <p>This research paper examines how urban green spaces impact air quality regulation in São Paulo, Brazil, by analyzing the interplay of vegetation cover (supply), vehicle emissions (demand), and pollutant movement (flow) during the COVID-19 quarantine.</p>
+                    
+                    <p>The study found that greater green area coverage and lower vehicular emissions improved air quality, particularly during periods of stricter quarantine. Interestingly, the spatial arrangement of green areas, specifically less fragmentation, generally enhanced air pollution reduction, and these benefits extended up to one kilometer from pollution sources.</p>
+                    
+                    <p>The findings underscore the importance of both expanding and strategically managing urban green infrastructure alongside emission reduction strategies to improve air quality in megacities.</p>
+                    
+                    <p>Audio and summary provided by <a href="https://notebooklm.google/" target="_blank">notebookLM</a>.</p>
+                </div>
+
+                <footer class="post-footer-minimal">
+                    <div class="post-tags-minimal">
+                        <span class="post-tag-minimal">#UrbanGreenery</span>
+                        <span class="post-tag-minimal">#AirQuality</span>
+                        <span class="post-tag-minimal">#COVID19</span>
+                        <span class="post-tag-minimal">#SaoPaulo</span>
+                        <span class="post-tag-minimal">#Sustainability</span>
+                    </div>
+                    <a href="../blog.html" class="btn btn-secondary">← Back to Blog</a>
+                </footer>
+            </article>
+        </main>
+    </div>
+
+    <!-- Scripts -->
     <script src="../js/script.js"></script>
 </body>
+</html>
 </html>

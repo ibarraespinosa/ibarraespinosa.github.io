@@ -57,4 +57,28 @@ document.addEventListener('DOMContentLoaded', function() {
             sidebar.classList.toggle('mobile-active');
         });
     }
+
+    // Dark Mode Functionality
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const htmlElement = document.documentElement;
+
+    // Check for saved user preference
+    const savedDarkMode = localStorage.getItem('darkMode');
+    if (savedDarkMode === 'enabled') {
+        htmlElement.classList.add('dark-mode');
+        if (darkModeToggle) darkModeToggle.checked = true;
+    }
+
+    // Toggle Dark Mode
+    if (darkModeToggle) {
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                htmlElement.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                htmlElement.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    }
 });

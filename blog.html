@@ -19,262 +19,86 @@
 <body>
     <!-- Dark Mode Toggle -->
     <div class="dark-mode-toggle">
-        <input type="checkbox" id="darkModeToggle">
+        <input type="checkbox" id="darkModeToggle" aria-label="Toggle dark mode">
         <label for="darkModeToggle">
-            <i class="fas fa-sun"></i>
-            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun" aria-hidden="true"></i>
+            <i class="fas fa-moon" aria-hidden="true"></i>
             <span class="toggle-ball"></span>
         </label>
     </div>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="logo">S.Ibarra-Espinosa</a>
-            <ul class="nav-links">
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#research">Research</a></li>
-                <li><a href="index.html#publications">Publications</a></li>
-                <li><a href="index.html#software">Software</a></li>
-                <li><a href="blog.html" class="active">Blog</a></li>
-                <li><a href="index.html#map">Locations</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Blog Header -->
-    <header class="blog-header">
-        <div class="container">
-            <h1>Research Blog</h1>
-            <p>Insights, updates, and thoughts on atmospheric science, emissions modeling, and data analysis</p>
-        </div>
-    </header>
-
-    <!-- Blog Content -->
-    <main class="blog-main">
-        <div class="container">
-            <!-- Blog Categories -->
-            <div class="blog-categories">
-                <h2>Categories</h2>
-                <div class="category-tags">
-                    <a href="#" class="category-tag active">All Posts</a>
-                    <a href="#" class="category-tag">Vehicular Emissions</a>
-                    <a href="#" class="category-tag">Climate Change</a>
-                    <a href="#" class="category-tag">Data Science</a>
-                    <a href="#" class="category-tag">Field Research</a>
-                    <a href="#" class="category-tag">Software Development</a>
+    <!-- Layout Wrapper -->
+    <div class="layout-wrapper">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-profile">
+                    <img src="images/profile.jpg" alt="Dr. Sergio Ibarra-Espinosa">
                 </div>
+                <h1 class="sidebar-name">Dr. Sergio Ibarra-Espinosa</h1>
+                <p class="sidebar-title">Senior Atmospheric Scientist</p>
             </div>
+            
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="index.html#dashboard"><i class="fas fa-th-large"></i> Dashboard</a></li>
+                    <li><a href="index.html#research"><i class="fas fa-flask"></i> Research</a></li>
+                    <li><a href="blog.html" class="active"><i class="fas fa-book"></i> Blog</a></li>
+                    <li><a href="index.html#publications"><i class="fas fa-book-open"></i> Publications</a></li>
+                    <li><a href="index.html#software"><i class="fas fa-code"></i> Software</a></li>
+                    <li><a href="index.html#hobbies"><i class="fas fa-heart"></i> Interests</a></li>
+                    <li><a href="index.html#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
 
-            <!-- Blog Search -->
-            <div class="blog-search">
-                <input type="text" placeholder="Search blog posts...">
-                <button><i class="fas fa-search"></i></button>
-            </div>
-
-            <!-- Featured Post -->
-            <div class="featured-post">
-                <article class="blog-card large">
-                    <div class="blog-image">
-                        <img src="images/blog-vein.jpg" alt="Blog Post: VEIN Model for Urban Emissions">
-                        <div class="blog-date">April 1, 2025</div>
-                    </div>
-                    <div class="blog-content">
-                        <span class="blog-category">Featured • Vehicular Emissions</span>
-                        <h2>Advancements in the VEIN Model for Urban Emissions</h2>
-                        <p class="blog-excerpt">Exploring the latest updates to the VEIN model and how it's being used in cities worldwide to improve air quality assessments.</p>
-                        <div class="blog-meta">
-                            <span><i class="fas fa-clock"></i> 8 min read</span>
-                            <span><i class="fas fa-comments"></i> 12 comments</span>
-                        </div>
-                        <a href="blog/advancements-in-vein-model.html" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-            </div>
-
-            <!-- Blog Posts Grid -->
-            <div class="blog-grid">
-
-
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="images/blog-covid.jpg" alt="Blog Post: COVID-19's Impact on Urban Air Quality">
-                        <div class="blog-date">March 28, 2025</div>
-                    </div>
-                    <div class="blog-content">
-                        <span class="blog-category">Climate Change</span>
-                        <h3>COVID-19's Impact on Urban Air Quality</h3>
-                        <p class="blog-excerpt">Analyzing how lockdown measures affected emissions patterns and what this tells us about sustainable urban mobility.</p>
-                        <div class="blog-meta">
-                            <span><i class="fas fa-clock"></i> 10 min read</span>
-                        </div>
-                        <a href="blog/sao_paulo_covid.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-
-
-                
-                <article class="blog-card">
-                        <img src="images/blog-ch4_sea1.jpg" alt="ch4" class="blog-card-img" width="50%">
-                        <div class="blog-card-content">
-                            <span class="blog-card-tag">Research</span>
-                            <h3 class="blog-card-title">📔 US Oil and Gas Methane Seasonality</h3>
-                            <p class="blog-card-excerpt">CH4, methane, oil, gas.</p>
-                            <a href="blog/ch4_sea.html" class="blog-card-link">Read More <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="images/urban_sp.jpeg" alt="Blog Post: 🌳 Urban Green Areas, Air Quality, and COVID-19 in São Paulo">
-                        <div class="blog-date">April 8, 2025</div>
-                    </div>
-                    <div class="blog-content">
-                        <span class="blog-category">Climate Change</span>
-                        <h3>🌳 Urban Green Areas, Air Quality, and COVID-19 in São Paulo</h3>
-                        <p class="blog-excerpt">Ecologycal services and vehicular emissions in cities.</p>
-                        <div class="blog-meta">
-                            <span><i class="fas fa-clock"></i> 7 min read</span>
-                        </div>
-                        <a href="blog/urban_sp.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-
-
-            </div>
-
-            <!-- Pagination -->
-            <div class="pagination">
-                <a href="#" class="page-link disabled"><i class="fas fa-chevron-left"></i> Previous</a>
-                <a href="#" class="page-link active">1</a>
-                <a href="#" class="page-link">2</a>
-                <a href="#" class="page-link">3</a>
-                <span class="page-dots">...</span>
-                <a href="#" class="page-link">6</a>
-                <a href="#" class="page-link">Next <i class="fas fa-chevron-right"></i></a>
-            </div>
-        </div>
-    </main>
-
-    <!-- Newsletter Subscription -->
-    <section class="newsletter">
-        <div class="container">
-            <div class="newsletter-content">
-                <h2>Stay Updated with My Research</h2>
-                <p>Subscribe to receive email updates about new publications, blog posts, and research activities.</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Your email address" required>
-                    <button type="submit" class="btn">Subscribe</button>
-                </form>
-                <p class="small">I respect your privacy. Unsubscribe at any time.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-about">
-                    <h3>Dr. Sergio Ibarra-Espinosa</h3>
-                    <p>Atmospheric Scientist specializing in emissions inventories, climate modeling, and air pollution analysis.</p>
-                </div>
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html#about">About</a></li>
-                        <li><a href="index.html#research">Research</a></li>
-                        <li><a href="index.html#publications">Publications</a></li>
-                        <li><a href="index.html#software">Software</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h3>Contact</h3>
-                    <p><i class="fas fa-envelope"></i> sergio.ibarra-espinosa@noaa.gov</p>
-                    <p><i class="fas fa-phone"></i> +1 (720) 449-3424</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Dr. Sergio Ibarra-Espinosa. All rights reserved.</p>
-                <div class="footer-social">
-                    <a href="https://scholar.google.com.br/citations?user=8ohZGHEAAAJ&hl" target="_blank"><i class="fab fa-google"></i></a>
+            <div class="sidebar-footer">
+                <div class="sidebar-social">
+                    <a href="https://scholar.google.com/citations?user=8ohZGHEAAAAJ" target="_blank"><i class="fab fa-google"></i></a>
                     <a href="https://github.com/ibarraespinosa" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="https://orcid.org/0000-0002-3162-1905" target="_blank"><i class="fab fa-orcid"></i></a>
-                    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/sibarra" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </div>
+                <p>&copy; 2026 Dr. Sergio Ibarra-Espinosa</p>
             </div>
-        </div>
-    </footer>
+        </aside>
 
-    <!-- Back to Top Button -->
-    <button id="backToTop" class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <header class="minimal-header">
+                <h1>Research Blog</h1>
+                <p>Insights on atmospheric science, emissions modeling, and data analysis.</p>
+            </header>
 
+            <div class="blog-simple-list">
+                <article class="blog-minimal-card">
+                    <div class="blog-minimal-meta">April 1, 2025 • Vehicular Emissions</div>
+                    <h2><a href="blog/advancements-in-vein-model.html">Advancements in the VEIN Model for Urban Emissions</a></h2>
+                    <p>Exploring the latest updates to the VEIN model and how it's being used in cities worldwide.</p>
+                </article>
+
+                <article class="blog-minimal-card">
+                    <div class="blog-minimal-meta">March 28, 2025 • Climate Change</div>
+                    <h2><a href="blog/sao_paulo_covid.html">COVID-19's Impact on Urban Air Quality</a></h2>
+                    <p>Analyzing how lockdown measures affected emissions patterns in major cities.</p>
+                </article>
+
+                <article class="blog-minimal-card">
+                    <div class="blog-minimal-meta">March 15, 2025 • Research</div>
+                    <h2><a href="blog/ch4_sea.html">📔 US Oil and Gas Methane Seasonality</a></h2>
+                    <p>Exploring the seasonal variations of CH₄ and CO₂ fluxes across North America.</p>
+                </article>
+
+                <article class="blog-minimal-card">
+                    <div class="blog-minimal-meta">April 8, 2025 • Climate Change</div>
+                    <h2><a href="blog/urban_sp.html">🌳 Urban Green Areas and COVID-19 in São Paulo</a></h2>
+                    <p>Ecologycal services and vehicular emissions in cities during the pandemic.</p>
+                </article>
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
     <script src="js/script.js"></script>
-    <script>
-        // Blog-specific JavaScript
-        document.addEventListener('DOMContentLoaded', function() {
-            // Category filter
-            const categoryTags = document.querySelectorAll('.category-tag');
-            const blogCards = document.querySelectorAll('.blog-card');
-
-            categoryTags.forEach(tag => {
-                tag.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    categoryTags.forEach(t => t.classList.remove('active'));
-                    this.classList.add('active');
-
-                    const category = this.textContent.trim();
-                    blogCards.forEach(card => {
-                        const cardCategory = card.querySelector('.blog-category').textContent.trim();
-                        if (category === 'All Posts' || cardCategory.includes(category)) {
-                            card.style.display = '';
-                        } else {
-                            card.style.display = 'none';
-                        }
-                    });
-                });
-            });
-
-            // Search functionality
-            const searchInput = document.querySelector('.blog-search input');
-            const searchButton = document.querySelector('.blog-search button');
-
-            searchButton.addEventListener('click', function(e) {
-                e.preventDefault();
-                const searchTerm = searchInput.value.toLowerCase();
-
-                blogCards.forEach(card => {
-                    const title = card.querySelector('h3').textContent.toLowerCase();
-                    const excerpt = card.querySelector('.blog-excerpt').textContent.toLowerCase();
-
-                    if (title.includes(searchTerm) || excerpt.includes(searchTerm)) {
-                        card.style.display = '';
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
-            });
-
-            // Newsletter form
-            const newsletterForm = document.querySelector('.newsletter-form');
-            if (newsletterForm) {
-                newsletterForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    const email = this.querySelector('input[type="email"]').value;
-                    alert(`Thank you for subscribing with ${email}! You'll receive updates soon.`);
-                    this.reset();
-                });
-            }
-        });
-    </script>
 </body>
+</html>
 </html>

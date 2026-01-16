@@ -11,126 +11,98 @@
 <body>
     <!-- Dark Mode Toggle -->
     <div class="dark-mode-toggle">
-        <input type="checkbox" id="darkModeToggle">
+        <input type="checkbox" id="darkModeToggle" aria-label="Toggle dark mode">
         <label for="darkModeToggle">
-            <i class="fas fa-sun"></i>
-            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun" aria-hidden="true"></i>
+            <i class="fas fa-moon" aria-hidden="true"></i>
             <span class="toggle-ball"></span>
         </label>
     </div>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="../index.html" class="logo">S.Ibarra-Espinosa</a>
-            <ul class="nav-links">
-                <li><a href="../index.html#about">About</a></li>
-                <li><a href="../index.html#research">Research</a></li>
-                <li><a href="../index.html#publications">Publications</a></li>
-                <li><a href="../index.html#software">Software</a></li>
-                <li><a href="../blog.html" class="active">Blog</a></li>
-                <li><a href="../index.html#map">Locations</a></li>
-                <li><a href="../index.html#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+    <!-- Layout Wrapper -->
+    <div class="layout-wrapper">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-profile">
+                    <img src="../images/profile.jpg" alt="Dr. Sergio Ibarra-Espinosa">
+                </div>
+                <h1 class="sidebar-name">Dr. Sergio Ibarra-Espinosa</h1>
+                <p class="sidebar-title">Senior Atmospheric Scientist</p>
             </div>
-        </div>
-    </nav>
-
-    <!-- Blog Post Header -->
-    <header class="post-header">
-        <div class="container">
-            <div class="post-meta">
-                <span class="post-category">COVID-19</span>
-                <span class="post-date">March 28, 2024</span>
-                <span class="post-read-time">6 min read</span>
-            </div>
-            <h1>📔 US Oil and Gas Methane Seasonality</h1>
-            <div class="post-author">
-                <img src="../images/profile.jpg" alt="Dr. Sergio Ibarra-Espinosa">
-                <span>Dr. Sergio Ibarra-Espinosa</span>
-            </div>
-        </div>
-    </header>
-
-    <!-- Blog Post Content -->
-    <article class="post-content">
-        <div class="container">
-            <img src="../images/blog-ch4_sea1.jpg" alt="COVID" class="post-featured-image">
             
-            <div class="post-body">
-                <audio controls>
-                    <source src="../audio/ch4s.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="../index.html#dashboard"><i class="fas fa-th-large"></i> Dashboard</a></li>
+                    <li><a href="../index.html#research"><i class="fas fa-flask"></i> Research</a></li>
+                    <li><a href="../blog.html" class="active"><i class="fas fa-book"></i> Blog</a></li>
+                    <li><a href="../index.html#publications"><i class="fas fa-book-open"></i> Publications</a></li>
+                    <li><a href="../index.html#software"><i class="fas fa-code"></i> Software</a></li>
+                    <li><a href="../index.html#hobbies"><i class="fas fa-heart"></i> Interests</a></li>
+                    <li><a href="../index.html#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
 
-                <p class="publication-reference">
-                    Hu, L., Andrews, A.E., Montzka, S.A., Miller, S.M., Bruhwiler, L., Oh, Y., Sweeney, C., Miller, J.B., McKain, K., Ibarra Espinosa, S. and Davis, K., 2025. An Unexpected Seasonal Cycle in US Oil and Gas Methane Emissions. Environmental Science & Technology.
-                    <a href="https://pubs.acs.org/doi/full/10.1021/acs.est.4c14090" target="_blank">https://pubs.acs.org/doi/full/10.1021/acs.est.4c14090</a>
-                </p>
-                
-                <p>This academic paper details a study quantifying U.S. methane emissions between 2008 and 2021 using atmospheric measurements and modeling. The researchers employed inverse modeling with ground and airborne data and transport simulations to estimate emissions. While the study's overall emission levels, spatial patterns, and trends are consistent with some prior research, a key finding is the identification of a previously unacknowledged seasonal cycle in methane emissions from the oil and gas sector. This seasonality shows higher emissions during winter compared to summer, a finding supported by additional atmospheric measurements of methane, propane, and methane isotopes. The paper notes that the specific reasons for this winter increase remain unclear, but the spatial distribution points towards natural gas production as the primary source, with natural gas consumption also contributing.</p>
-                    <p>audio and summary <a href="https://notebooklm.google/">notebookLM</a>
-                    </p>
-            </div>
-
-            <div class="post-footer">
-                <div class="post-tags">
-                    <a href="#">#COVID19</a>
-                    <a href="#">#AirPollution</a>
-                    <a href="#">#PublicHealth</a>
-                    <a href="#">#Mobility</a>
-                    <a href="#">#StatisticalModeling</a>
-                    <a href="#">#SaoPaulo</a>
-                </div>
-                <a href="../blog.html" class="btn">Back to Blog</a>
-            </div>
-        </div>
-    </article>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-about">
-                    <h3>Dr. Sergio Ibarra-Espinosa</h3>
-                    <p>Atmospheric Scientist specializing in emissions inventories, climate modeling, and air pollution analysis.</p>
-                </div>
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="../index.html#about">About</a></li>
-                        <li><a href="../index.html#research">Research</a></li>
-                        <li><a href="../index.html#publications">Publications</a></li>
-                        <li><a href="../index.html#software">Software</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h3>Contact</h3>
-                    <p><i class="fas fa-envelope"></i> sergio.ibarra-espinosa@noaa.gov</p>
-                    <p><i class="fas fa-phone"></i> +1 (720) 449-3424</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Dr. Sergio Ibarra-Espinosa. All rights reserved.</p>
-                <div class="footer-social">
-                    <a href="https://scholar.google.com.br/citations?user=8ohZGHEAAAJ&hl" target="_blank"><i class="fab fa-google"></i></a>
+            <div class="sidebar-footer">
+                <div class="sidebar-social">
+                    <a href="https://scholar.google.com/citations?user=8ohZGHEAAAAJ" target="_blank"><i class="fab fa-google"></i></a>
                     <a href="https://github.com/ibarraespinosa" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="https://orcid.org/0000-0002-3162-1905" target="_blank"><i class="fab fa-orcid"></i></a>
-                    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/sibarra" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </div>
+                <p>&copy; 2026 Dr. Sergio Ibarra-Espinosa</p>
             </div>
-        </div>
-    </footer>
+        </aside>
 
-    <!-- Back to Top Button -->
-    <button id="backToTop" class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <article class="post-article-content">
+                <header class="post-header-minimal">
+                    <div class="post-meta-minimal">March 15, 2025 • Research</div>
+                    <h1>📔 US Oil and Gas Methane Seasonality</h1>
+                </header>
 
+                <div class="post-featured-media">
+                    <img src="../images/blog-ch4_sea1.jpg" alt="Oil and Gas Methane Emissions">
+                </div>
+
+                <div class="post-body-text">
+                    <audio controls>
+                        <source src="../audio/ch4s.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+
+                    <div class="publication-box">
+                        Hu, L., Andrews, A.E., Montzka, S.A., Miller, S.M., Bruhwiler, L., Oh, Y., Sweeney, C., Miller, J.B., McKain, K., Ibarra Espinosa, S. and Davis, K., 2025. An Unexpected Seasonal Cycle in US Oil and Gas Methane Emissions. Environmental Science & Technology.
+                        <br>
+                        <a href="https://pubs.acs.org/doi/full/10.1021/acs.est.4c14090" target="_blank">https://pubs.acs.org/doi/full/10.1021/acs.est.4c14090</a>
+                    </div>
+
+                    <p>This academic paper details a study quantifying U.S. methane emissions between 2008 and 2021 using atmospheric measurements and modeling. The researchers employed inverse modeling with ground and airborne data and transport simulations to estimate emissions.</p>
+                    
+                    <p>While the study's overall emission levels, spatial patterns, and trends are consistent with some prior research, a key finding is the identification of a previously unacknowledged seasonal cycle in methane emissions from the oil and gas sector. This seasonality shows higher emissions during winter compared to summer, a finding supported by additional atmospheric measurements of methane, propane, and methane isotopes.</p>
+                    
+                    <p>The paper notes that the specific reasons for this winter increase remain unclear, but the spatial distribution points towards natural gas production as the primary source, with natural gas consumption also contributing.</p>
+                    
+                    <p>Audio and summary provided by <a href="https://notebooklm.google/" target="_blank">notebookLM</a>.</p>
+                </div>
+
+                <footer class="post-footer-minimal">
+                    <div class="post-tags-minimal">
+                        <span class="post-tag-minimal">#Methane</span>
+                        <span class="post-tag-minimal">#OilAndGas</span>
+                        <span class="post-tag-minimal">#Emissions</span>
+                        <span class="post-tag-minimal">#Seasonality</span>
+                        <span class="post-tag-minimal">#InverseModeling</span>
+                    </div>
+                    <a href="../blog.html" class="btn btn-secondary">← Back to Blog</a>
+                </footer>
+            </article>
+        </main>
+    </div>
+
+    <!-- Scripts -->
     <script src="../js/script.js"></script>
 </body>
+</html>
 </html>

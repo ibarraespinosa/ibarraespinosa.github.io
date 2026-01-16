@@ -11,191 +11,141 @@
 <body>
     <!-- Dark Mode Toggle -->
     <div class="dark-mode-toggle">
-        <input type="checkbox" id="darkModeToggle">
+        <input type="checkbox" id="darkModeToggle" aria-label="Toggle dark mode">
         <label for="darkModeToggle">
-            <i class="fas fa-sun"></i>
-            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun" aria-hidden="true"></i>
+            <i class="fas fa-moon" aria-hidden="true"></i>
             <span class="toggle-ball"></span>
         </label>
     </div>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="../index.html" class="logo">S.Ibarra-Espinosa</a>
-            <ul class="nav-links">
-                <li><a href="../index.html#about">About</a></li>
-                <li><a href="../index.html#research">Research</a></li>
-                <li><a href="../index.html#publications">Publications</a></li>
-                <li><a href="../index.html#software">Software</a></li>
-                <li><a href="../blog.html" class="active">Blog</a></li>
-                <li><a href="../index.html#map">Locations</a></li>
-                <li><a href="../index.html#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Blog Post Header -->
-    <header class="post-header">
-        <div class="container">
-            <div class="post-meta">
-                <span class="post-category">Vehicular Emissions</span>
-                <span class="post-date">May 15, 2024</span>
-                <span class="post-read-time">6 min read</span>
-            </div>
-            <h1>Advancements in the VEIN Model for Urban Emissions</h1>
-            <div class="post-author">
-                <img src="../images/profile.jpg" alt="Dr. Sergio Ibarra-Espinosa">
-                <span>Dr. Sergio Ibarra-Espinosa</span>
-            </div>
-        </div>
-    </header>
-
-    <!-- Blog Post Content -->
-    <article class="post-content">
-        <div class="container">
-            <img src="../images/blog-vein.jpg" alt="VEIN model visualization" class="post-featured-image">
-            
-            <div class="post-body">
-                <p class="publication-reference">
-                    Ibarra-Espinosa, S., Ynoue, R., O'Sullivan, S., Pebesma, E., Andrade, M. D. F., & Osses, M. (2018). VEIN v0.2.2: an R package for bottom–up vehicular emissions inventories. Geoscientific Model Development, 11(6), 2209-2229.
-                    <a href="https://doi.org/10.5194/gmd-11-2209-2018" target="_blank">https://doi.org/10.5194/gmd-11-2209-2018</a>
-                </p>
-                
-                <p>I'm excited to announce significant advancements in the VEIN (Vehicular Emissions INventory) model, an open-source R package designed for estimating vehicular emissions at high spatial and temporal resolution. The latest version brings substantial improvements to computational efficiency and modeling capabilities.</p>
-                
-                <div class="image-gallery">
-                    <figure>
-                        <img src="../images/carros_sp.jpg" alt="Traffic in São Paulo" class="post-image">
-                        <figcaption>Heavy traffic in São Paulo, Brazil - a key study area for the VEIN model</figcaption>
-                    </figure>
+    <!-- Layout Wrapper -->
+    <div class="layout-wrapper">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-profile">
+                    <img src="../images/profile.jpg" alt="Dr. Sergio Ibarra-Espinosa">
                 </div>
-                
-                <h2>New Features in Version 1.0</h2>
-                <p>The updated VEIN model now includes:</p>
-                <ul>
-                    <li>Enhanced spatial analysis capabilities with improved integration with sf and terra packages</li>
-                    <li>New emission factors for latest vehicle technologies in developing countries</li>
-                    <li>Improved algorithms for traffic pattern analysis that better capture daily and weekly variations</li>
-                    <li>Advanced chemical speciation profiles for VOCs and PM</li>
-                    <li>Parallel processing capabilities that reduce computation time by up to 70%</li>
-                    <li>Better integration with atmospheric chemistry models like WRF-Chem and CMAQ</li>
-                </ul>
-                
-                <h2>Case Studies</h2>
-                <p>Recent applications of the VEIN model have demonstrated its effectiveness in various urban contexts:</p>
-                <ul>
-                    <li><strong>São Paulo, Brazil:</strong> Comprehensive inventory with hourly resolution showing the impact of COVID-19 lockdowns on urban air quality</li>
-                    <li><strong>Santiago, Chile:</strong> Analysis of electrification scenarios for public transportation</li>
-                    <li><strong>Beijing, China:</strong> Assessment of policy interventions for reducing particulate matter during winter pollution episodes</li>
-                </ul>
-                
-                <p>These case studies highlight VEIN's versatility in addressing complex urban air quality challenges across different geographical and socioeconomic contexts.</p>
-                
-                <h2>VEIN Version History</h2>
-                <p>The VEIN model has evolved significantly since its inception. Here's a look at some key developments:</p>
-                
-                <h3>Origins (2016-2017)</h3>
-                <p>VEIN began as a collection of R scripts called "remIAG" before its official release. The initial paper describing the methodology was published in the Journal of Earth Sciences & Geotechnical Engineering.</p>
-                
-                <h3>Early Versions (0.2.x - 0.3.x)</h3>
-                <ul>
-                    <li>Added support for emissions calculations in various units (kg)</li>
-                    <li>Implemented NMHC speciation for industrial and buildings sources</li>
-                    <li>Improved wear emissions calculations with ef_wear and emis_wear functions</li>
-                    <li>Added age distribution functions with default naming conventions</li>
-                    <li>Fixed critical bugs in spatial processing and emissions grid generation</li>
-                </ul>
-                
-                <h3>Middle Versions (0.6.x - 0.7.x)</h3>
-                <ul>
-                    <li>Added split_emis functionality (v0.6.1)</li>
-                    <li>Introduced PM characteristics including Active Surface measurements</li>
-                    <li>Enhanced emis_grid to support evaluated parsed text operations ("sum", "mean", etc.)</li>
-                    <li>Fixed projection issues with various emission factors</li>
-                    <li>Improved handling of NA and NaN values in grid calculations</li>
-                </ul>
-                
-                <h3>Recent Versions (0.9.x and beyond)</h3>
-                <ul>
-                    <li>Added speciation for liquid fuels (E25, E100, G)</li>
-                    <li>Incorporated hybrid gasoline and diesel emission factors for Chinese vehicles</li>
-                    <li>Developed specialized projects for various regions (e.g., brazil_bu_chem)</li>
-                    <li>Added PM2.5 speciation for Light-Duty Vehicles (LDV) and Heavy-Duty Vehicles (HDV)</li>
-                    <li>Enhanced integration with atmospheric chemistry models</li>
-                </ul>
-                
-                <p>This continuous development has made VEIN one of the most comprehensive tools for vehicular emissions modeling, especially for regions with limited data availability.</p>
-                
-                <h2>Future Developments</h2>
-                <p>Looking ahead, we're working on several exciting enhancements:</p>
-                <ul>
-                    <li>Machine learning integration for improved traffic flow prediction</li>
-                    <li>Real-time emission modeling capabilities using streaming traffic data</li>
-                    <li>Enhanced visualization tools for policy communication</li>
-                    <li>Direct interfaces with popular atmospheric chemistry models</li>
-                </ul>
-                
-                <p>The VEIN model continues to be a valuable tool for researchers, urban planners, and policymakers working to understand and mitigate vehicular emissions in urban environments.</p>
+                <h1 class="sidebar-name">Dr. Sergio Ibarra-Espinosa</h1>
+                <p class="sidebar-title">Senior Atmospheric Scientist</p>
             </div>
             
-            <div class="post-footer">
-                <div class="post-tags">
-                    <a href="#">#EmissionsModeling</a>
-                    <a href="#">#UrbanAirQuality</a>
-                    <a href="#">#RProgramming</a>
-                    <a href="#">#VEIN</a>
-                </div>
-                <a href="../blog.html" class="btn">Back to Blog</a>
-            </div>
-        </div>
-    </article>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="../index.html#dashboard"><i class="fas fa-th-large"></i> Dashboard</a></li>
+                    <li><a href="../index.html#research"><i class="fas fa-flask"></i> Research</a></li>
+                    <li><a href="../blog.html" class="active"><i class="fas fa-book"></i> Blog</a></li>
+                    <li><a href="../index.html#publications"><i class="fas fa-book-open"></i> Publications</a></li>
+                    <li><a href="../index.html#software"><i class="fas fa-code"></i> Software</a></li>
+                    <li><a href="../index.html#hobbies"><i class="fas fa-heart"></i> Interests</a></li>
+                    <li><a href="../index.html#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-about">
-                    <h3>Dr. Sergio Ibarra-Espinosa</h3>
-                    <p>Atmospheric Scientist specializing in emissions inventories, climate modeling, and air pollution analysis.</p>
-                </div>
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="../index.html#about">About</a></li>
-                        <li><a href="../index.html#research">Research</a></li>
-                        <li><a href="../index.html#publications">Publications</a></li>
-                        <li><a href="../index.html#software">Software</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h3>Contact</h3>
-                    <p><i class="fas fa-envelope"></i> sergio.ibarra-espinosa@noaa.gov</p>
-                    <p><i class="fas fa-phone"></i> +1 (720) 449-3424</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Dr. Sergio Ibarra-Espinosa. All rights reserved.</p>
-                <div class="footer-social">
-                    <a href="https://scholar.google.com.br/citations?user=8ohZGHEAAAJ&hl" target="_blank"><i class="fab fa-google"></i></a>
+            <div class="sidebar-footer">
+                <div class="sidebar-social">
+                    <a href="https://scholar.google.com/citations?user=8ohZGHEAAAAJ" target="_blank"><i class="fab fa-google"></i></a>
                     <a href="https://github.com/ibarraespinosa" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="https://orcid.org/0000-0002-3162-1905" target="_blank"><i class="fab fa-orcid"></i></a>
-                    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/sibarra" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </div>
+                <p>&copy; 2026 Dr. Sergio Ibarra-Espinosa</p>
             </div>
-        </div>
-    </footer>
+        </aside>
 
-    <!-- Back to Top Button -->
-    <button id="backToTop" class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <article class="post-article-content">
+                <header class="post-header-minimal">
+                    <div class="post-meta-minimal">May 15, 2024 • Vehicular Emissions</div>
+                    <h1>Advancements in the VEIN Model for Urban Emissions</h1>
+                </header>
 
+                <div class="post-featured-media">
+                    <img src="../images/blog-vein.jpg" alt="VEIN model visualization">
+                </div>
+
+                <div class="post-body-text">
+                    <div class="publication-box">
+                        Ibarra-Espinosa, S., Ynoue, R., O'Sullivan, S., Pebesma, E., Andrade, M. D. F., & Osses, M. (2018). VEIN v0.2.2: an R package for bottom–up vehicular emissions inventories. Geoscientific Model Development, 11(6), 2209-2229.
+                        <br>
+                        <a href="https://doi.org/10.5194/gmd-11-2209-2018" target="_blank">https://doi.org/10.5194/gmd-11-2209-2018</a>
+                    </div>
+
+                    <p>I'm excited to announce significant advancements in the VEIN (Vehicular Emissions INventory) model, an open-source R package designed for estimating vehicular emissions at high spatial and temporal resolution. The latest version brings substantial improvements to computational efficiency and modeling capabilities.</p>
+
+                    <div class="post-featured-media">
+                        <img src="../images/carros_sp.jpg" alt="Traffic in São Paulo">
+                        <p style="font-size: 0.9rem; color: var(--text-muted); padding: 10px; text-align: center;">Heavy traffic in São Paulo, Brazil - a key study area for the VEIN model</p>
+                    </div>
+
+                    <h2>New Features in Version 1.0</h2>
+                    <ul>
+                        <li>Enhanced spatial analysis capabilities with improved integration with sf and terra packages</li>
+                        <li>New emission factors for latest vehicle technologies in developing countries</li>
+                        <li>Improved algorithms for traffic pattern analysis that better capture daily and weekly variations</li>
+                        <li>Advanced chemical speciation profiles for VOCs and PM</li>
+                        <li>Parallel processing capabilities that reduce computation time by up to 70%</li>
+                        <li>Better integration with atmospheric chemistry models like WRF-Chem and CMAQ</li>
+                    </ul>
+
+                    <h2>Case Studies</h2>
+                    <ul>
+                        <li><strong>São Paulo, Brazil:</strong> Comprehensive inventory with hourly resolution showing the impact of COVID-19 lockdowns on urban air quality</li>
+                        <li><strong>Santiago, Chile:</strong> Analysis of electrification scenarios for public transportation</li>
+                        <li><strong>Beijing, China:</strong> Assessment of policy interventions for reducing particulate matter during winter pollution episodes</li>
+                    </ul>
+
+                    <h2>VEIN Version History</h2>
+                    <h3>Origins (2016-2017)</h3>
+                    <p>VEIN began as a collection of R scripts called "remIAG" before its official release. The initial paper describing the methodology was published in the Journal of Earth Sciences & Geotechnical Engineering.</p>
+
+                    <h3>Early Versions (0.2.x - 0.3.x)</h3>
+                    <ul>
+                        <li>Added support for emissions calculations in various units (kg)</li>
+                        <li>Implemented NMHC speciation for industrial and buildings sources</li>
+                        <li>Improved wear emissions calculations with ef_wear and emis_wear functions</li>
+                        <li>Added age distribution functions with default naming conventions</li>
+                    </ul>
+
+                    <h3>Middle Versions (0.6.x - 0.7.x)</h3>
+                    <ul>
+                        <li>Added split_emis functionality (v0.6.1)</li>
+                        <li>Introduced PM characteristics including Active Surface measurements</li>
+                        <li>Enhanced emis_grid to support evaluated parsed text operations ("sum", "mean", etc.)</li>
+                    </ul>
+
+                    <h3>Recent Versions (0.9.x and beyond)</h3>
+                    <ul>
+                        <li>Added speciation for liquid fuels (E25, E100, G)</li>
+                        <li>Incorporated hybrid gasoline and diesel emission factors for Chinese vehicles</li>
+                        <li>Developed specialized projects for various regions (e.g., brazil_bu_chem)</li>
+                    </ul>
+
+                    <h2>Future Developments</h2>
+                    <ul>
+                        <li>Machine learning integration for improved traffic flow prediction</li>
+                        <li>Real-time emission modeling capabilities using streaming traffic data</li>
+                        <li>Enhanced visualization tools for policy communication</li>
+                    </ul>
+                </div>
+
+                <footer class="post-footer-minimal">
+                    <div class="post-tags-minimal">
+                        <span class="post-tag-minimal">#EmissionsModeling</span>
+                        <span class="post-tag-minimal">#UrbanAirQuality</span>
+                        <span class="post-tag-minimal">#RProgramming</span>
+                        <span class="post-tag-minimal">#VEIN</span>
+                    </div>
+                    <a href="../blog.html" class="btn btn-secondary">← Back to Blog</a>
+                </footer>
+            </article>
+        </main>
+    </div>
+
+    <!-- Scripts -->
     <script src="../js/script.js"></script>
 </body>
+</html>
 </html>

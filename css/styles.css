@@ -18,6 +18,17 @@
     --border-radius: 12px;
 }
 
+/* ===== DARK MODE OVERRIDES ===== */
+:root.dark-mode {
+    --primary-bg: #0f172a;
+    --sidebar-bg: #000000;
+    --card-bg: #1e293b;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --accent: #60a5fa;
+    --border: #334155;
+}
+
 /* ===== BASE RESET ===== */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
@@ -133,7 +144,7 @@ body {
 .hero-card {
     grid-column: span 4;
     padding: 60px 40px;
-    background: linear-gradient(to right, #ffffff, #f1f5f9);
+    background: linear-gradient(to right, var(--card-bg), var(--primary-bg));
 }
 
 .hero-card h2 {
@@ -253,4 +264,200 @@ body {
     .bento-grid { grid-template-columns: 1fr; }
     .hero-card, .stats-card, .about-card, .research-card-grid, .publications-card, .software-mini-card, .hobbies-card, .contact-mini-card { grid-column: span 1; }
     .contact-mini-card form { grid-template-columns: 1fr; }
+}
+
+/* ===== DARK MODE TOGGLE STYLES ===== */
+.dark-mode-toggle {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    z-index: 2000;
+}
+
+.dark-mode-toggle input {
+    display: none;
+}
+
+.dark-mode-toggle label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    width: 60px;
+    height: 30px;
+    background-color: var(--sidebar-bg);
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.dark-mode-toggle .fa-sun { color: #f1c40f; }
+.dark-mode-toggle .fa-moon { color: #f39c12; }
+
+.dark-mode-toggle .toggle-ball {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+/* ===== MINIMALIST BLOG STYLES ===== */
+.minimal-header {
+    margin-bottom: 40px;
+}
+
+.minimal-header h1 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.minimal-header p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+.blog-simple-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 800px;
+}
+
+.blog-minimal-card {
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--border);
+    transition: 0.3s;
+}
+
+.blog-minimal-card:last-child {
+    border-bottom: none;
+}
+
+.blog-minimal-meta {
+    font-size: 0.85rem;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.blog-minimal-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.blog-minimal-card h2 a {
+    color: var(--text-main);
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.blog-minimal-card h2 a:hover {
+    color: var(--accent);
+}
+
+.blog-minimal-card p {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* ===== INDIVIDUAL BLOG POST STYLES ===== */
+.post-header-minimal {
+    margin-bottom: 40px;
+}
+
+.post-meta-minimal {
+    font-size: 0.9rem;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.post-header-minimal h1 {
+    font-family: var(--font-heading);
+    font-size: 2.8rem;
+    line-height: 1.2;
+    color: var(--text-main);
+}
+
+.post-article-content {
+    max-width: 800px;
+    margin: 0;
+}
+
+.post-featured-media {
+    margin: 30px 0;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    border: 1px solid var(--border);
+}
+
+.post-featured-media img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.post-body-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-main);
+}
+
+.post-body-text p {
+    margin-bottom: 25px;
+}
+
+.post-body-text audio {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.publication-box {
+    background: var(--primary-bg);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent);
+    margin: 30px 0;
+    font-size: 0.95rem;
+}
+
+.post-footer-minimal {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid var(--border);
+}
+
+.post-tags-minimal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.post-tag-minimal {
+    font-size: 0.8rem;
+    background: var(--border);
+    color: var(--text-main);
+    padding: 4px 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.post-tag-minimal:hover {
+    background: var(--accent);
+    color: white;
+}
+
+.dark-mode-toggle input:checked + label .toggle-ball {
+    transform: translateX(30px);
 }

@@ -458,6 +458,87 @@ body {
     color: white;
 }
 
+/* Interests Page Styles */
+.interests-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.interests-header {
+    margin-bottom: 50px;
+}
+
+.interests-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: var(--text-main);
+}
+
+.interests-header p {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+}
+
+.interest-item {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 80px;
+    align-items: center;
+}
+
+.interest-item.alternate {
+    flex-direction: row-reverse;
+}
+
+.interest-image {
+    flex: 1;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.interest-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.5s;
+}
+
+.interest-image:hover img {
+    transform: scale(1.05);
+}
+
+.interest-content {
+    flex: 1;
+}
+
+.interest-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.interest-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-main);
+}
+
+@media (max-width: 768px) {
+    .interest-item, .interest-item.alternate {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .interests-header h1 {
+        font-size: 2.2rem;
+    }
+}
+
 .dark-mode-toggle input:checked + label .toggle-ball {
     transform: translateX(30px);
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research Blog | Sergio Ibarra-Espinosa</title>
+    <title>Interests | Sergio Ibarra-Espinosa</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
@@ -43,10 +43,10 @@
                 <ul>
                     <li><a href="index.html#dashboard"><i class="fas fa-th-large"></i> Dashboard</a></li>
                     <li><a href="index.html#research"><i class="fas fa-flask"></i> Research</a></li>
-                    <li><a href="blog.html" class="active"><i class="fas fa-book"></i> Blog</a></li>
+                    <li><a href="blog.html"><i class="fas fa-book"></i> Blog</a></li>
                     <li><a href="index.html#publications"><i class="fas fa-book-open"></i> Publications</a></li>
                     <li><a href="index.html#software"><i class="fas fa-code"></i> Software</a></li>
-                    <li><a href="interests.html"><i class="fas fa-heart"></i> Interests</a></li>
+                    <li><a href="interests.html" class="active"><i class="fas fa-heart"></i> Interests</a></li>
                     <li><a href="index.html#contact"><i class="fas fa-envelope"></i> Contact</a></li>
                 </ul>
             </nav>
@@ -64,35 +64,46 @@
 
         <!-- Main Content Area -->
         <main class="main-content">
-            <header class="minimal-header">
-                <h1>Research Blog</h1>
-                <p>Insights on atmospheric science, emissions modeling, and data analysis.</p>
-            </header>
+            <div class="interests-container">
+                <header class="interests-header">
+                    <h1>Life Beyond Science</h1>
+                    <p>Exploring the world through movement, outdoor adventure, and culinary arts.</p>
+                </header>
 
-            <div class="blog-simple-list">
-                <article class="blog-minimal-card">
-                    <div class="blog-minimal-meta">April 1, 2025 • Vehicular Emissions</div>
-                    <h2><a href="blog/advancements-in-vein-model.html">Advancements in the VEIN Model for Urban Emissions</a></h2>
-                    <p>Exploring the latest updates to the VEIN model and how it's being used in cities worldwide.</p>
-                </article>
+                <div class="interests-grid">
+                    <!-- Snowboarding -->
+                    <section class="interest-item">
+                        <div class="interest-image">
+                            <img src="images/interests-snowboarding.jpg" alt="Snowboarding on a mountain">
+                        </div>
+                        <div class="interest-content">
+                            <h2><i class="fas fa-snowboarding"></i> Snowboarding</h2>
+                            <p>There's nothing quite like the feeling of carving through fresh powder on a crisp winter morning. Snowboarding is my primary winter passion, offering a perfect blend of physical challenge and serene mountain landscapes.</p>
+                        </div>
+                    </section>
 
-                <article class="blog-minimal-card">
-                    <div class="blog-minimal-meta">March 28, 2025 • Climate Change</div>
-                    <h2><a href="blog/sao_paulo_covid.html">COVID-19's Impact on Urban Air Quality</a></h2>
-                    <p>Analyzing how lockdown measures affected emissions patterns in major cities.</p>
-                </article>
+                    <!-- Dancing -->
+                    <section class="interest-item alternate">
+                        <div class="interest-image">
+                            <img src="images/interests-dancing.jpg" alt="Couple dancing Latin music">
+                        </div>
+                        <div class="interest-content">
+                            <h2><i class="fas fa-music"></i> Bachata & Salsa Dancing</h2>
+                            <p>Dance is where I find my flow. I enjoy the rhythm and connection of Latin dances, specifically Bachata and Salsa. It's a vibrant way to disconnect from the analytical world and embrace the music.</p>
+                        </div>
+                    </section>
 
-                <article class="blog-minimal-card">
-                    <div class="blog-minimal-meta">March 15, 2025 • Research</div>
-                    <h2><a href="blog/ch4_sea.html">📔 US Oil and Gas Methane Seasonality</a></h2>
-                    <p>Exploring the seasonal variations of CH₄ and CO₂ fluxes across North America.</p>
-                </article>
-
-                <article class="blog-minimal-card">
-                    <div class="blog-minimal-meta">April 8, 2025 • Climate Change</div>
-                    <h2><a href="blog/urban_sp.html">🌳 Urban Green Areas and COVID-19 in São Paulo</a></h2>
-                    <p>Ecologycal services and vehicular emissions in cities during the pandemic.</p>
-                </article>
+                    <!-- Cooking & BBQ -->
+                    <section class="interest-item">
+                        <div class="interest-image">
+                            <img src="images/interests-cooking.jpg" alt="Professional BBQ grill with steaks">
+                        </div>
+                        <div class="interest-content">
+                            <h2><i class="fas fa-utensils"></i> Cooking & BBQ</h2>
+                            <p>From the precise chemistry of a complex recipe to the primal art of a slow-smoked BBQ, I love the culinary world. Grilling for friends and family is my favorite way to spend a summer evening.</p>
+                        </div>
+                    </section>
+                </div>
             </div>
         </main>
     </div>
@@ -100,5 +111,4 @@
     <!-- Scripts -->
     <script src="js/script.js"></script>
 </body>
-</html>
 </html>

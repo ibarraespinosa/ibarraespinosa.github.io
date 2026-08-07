@@ -109,6 +109,25 @@ body {
 .sidebar-social a { color: #94a3b8; transition: 0.3s; }
 .sidebar-social a:hover { color: white; }
 
+.sidebar-qr {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.sidebar-qr img {
+    width: 110px;
+    height: 110px;
+    background: #fff;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.sidebar-qr p {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 8px;
+}
+
 /* ===== MAIN CONTENT ===== */
 .main-content {
     margin-left: var(--sidebar-width);
@@ -260,6 +279,8 @@ body {
     .sidebar { width: 100%; height: auto; position: relative; padding: 20px; }
     .sidebar-header, .sidebar-footer { display: none; }
     .sidebar-nav ul { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; }
+    .sidebar-qr { margin-top: 15px; }
+    .sidebar-qr img { width: 70px; height: 70px; padding: 5px; }
     .main-content { margin-left: 0; padding: 20px; }
     .bento-grid { grid-template-columns: 1fr; }
     .hero-card, .stats-card, .about-card, .research-card-grid, .publications-card, .software-mini-card, .hobbies-card, .contact-mini-card { grid-column: span 1; }

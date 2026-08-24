@@ -559,7 +559,7 @@ body {
 }
 
 .interest-note i {
-    margin-left: 8px;
+    margin: 0 8px;
 }
 
 @media (max-width: 768px) {

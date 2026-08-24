@@ -549,6 +549,15 @@ body {
     color: var(--text-main);
 }
 
+.interest-note {
+    margin-top: 40px;
+    padding-top: 25px;
+    border-top: 1px solid var(--border);
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    text-align: center;
+}
+
 @media (max-width: 768px) {
     .interest-item, .interest-item.alternate {
         flex-direction: column;

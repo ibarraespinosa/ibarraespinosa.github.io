@@ -558,6 +558,10 @@ body {
     text-align: center;
 }
 
+.interest-note i {
+    margin-right: 8px;
+}
+
 @media (max-width: 768px) {
     .interest-item, .interest-item.alternate {
         flex-direction: column;

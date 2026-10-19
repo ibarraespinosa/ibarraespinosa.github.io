@@ -1,3 +1,33 @@
+/* ===== SEASONAL & WEEKEND MOOD =====
+   Adds a class to <html> so CSS can theme the site by season and by
+   weekday/weekend. Set HEMISPHERE to 'south' to flip the seasons. */
+(function () {
+    const HEMISPHERE = 'north';
+    const root = document.documentElement;
+    const now = new Date();
+    let month = now.getMonth(); // 0 = January ... 11 = December
+    if (HEMISPHERE === 'south') month = (month + 6) % 12;
+
+    let season;
+    if (month >= 2 && month <= 4) {
+        season = { name: 'spring', label: 'Spring', emoji: '🌸' };
+    } else if (month >= 5 && month <= 7) {
+        season = { name: 'summer', label: 'Summer', emoji: '☀️' };
+    } else if (month >= 8 && month <= 10) {
+        season = { name: 'autumn', label: 'Autumn', emoji: '🍂' };
+    } else {
+        season = { name: 'winter', label: 'Winter', emoji: '❄️' };
+    }
+
+    const day = now.getDay(); // 0 = Sunday ... 6 = Saturday
+    const isWeekend = day === 0 || day === 6;
+
+    root.classList.add('season-' + season.name);
+    root.classList.add(isWeekend ? 'mode-weekend' : 'mode-weekday');
+
+    window.seasonMood = { season: season, isWeekend: isWeekend };
+})();
+
 document.addEventListener('DOMContentLoaded', function() {
     // Sidebar Navigation Highlighting
     const navLinks = document.querySelectorAll('.sidebar-nav a');
@@ -86,5 +116,34 @@ document.addEventListener('DOMContentLoaded', function() {
                 localStorage.setItem('darkMode', 'disabled');
             }
         });
+    }
+
+    // Seasonal / weekend chip in the sidebar
+    const mood = window.seasonMood;
+    const sidebarEl = document.querySelector('.sidebar');
+    if (mood && sidebarEl && !document.querySelector('.season-chip')) {
+        const chip = document.createElement('div');
+        chip.className = 'season-chip';
+        chip.title = mood.isWeekend
+            ? 'Weekend mood: taking it a little slower'
+            : 'Weekday mood: focus mode';
+
+        const emoji = document.createElement('span');
+        emoji.className = 'season-chip-emoji';
+        emoji.setAttribute('aria-hidden', 'true');
+        emoji.textContent = mood.season.emoji;
+
+        const label = document.createElement('span');
+        label.textContent = mood.season.label + ' · ' + (mood.isWeekend ? 'Weekend' : 'Weekday');
+
+        chip.appendChild(emoji);
+        chip.appendChild(label);
+
+        const footer = sidebar.querySelector('.sidebar-footer');
+        if (footer) {
+            sidebar.insertBefore(chip, footer);
+        } else {
+            sidebar.appendChild(chip);
+        }
     }
 });

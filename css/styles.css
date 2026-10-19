@@ -29,6 +29,28 @@
     --border: #334155;
 }
 
+/* ===== SEASONAL MOOD =====
+   The season/weekend classes are added to <html> by js/script.js.
+   Each season gets its own accent, soft tint and emoji. */
+:root {
+    --season-soft: #dbeafe;
+    --season-emoji: "🌤️";
+}
+
+:root.season-spring { --accent: #15803d; --season-soft: #dcfce7; --season-emoji: "🌸"; }
+:root.season-summer { --accent: #b45309; --season-soft: #fef3c7; --season-emoji: "☀️"; }
+:root.season-autumn { --accent: #c2410c; --season-soft: #ffedd5; --season-emoji: "🍂"; }
+:root.season-winter { --accent: #0369a1; --season-soft: #e0f2fe; --season-emoji: "❄️"; }
+
+:root.dark-mode.season-spring { --accent: #86efac; --season-soft: #14532d; }
+:root.dark-mode.season-summer { --accent: #fcd34d; --season-soft: #78350f; }
+:root.dark-mode.season-autumn { --accent: #fdba74; --season-soft: #7c2d12; }
+:root.dark-mode.season-winter { --accent: #7dd3fc; --season-soft: #0c4a6e; }
+
+/* Weekends get a slightly warmer page tint and a softer vibe */
+:root.mode-weekend { --primary-bg: #fdfaf5; }
+:root.dark-mode.mode-weekend { --primary-bg: #14110d; }
+
 /* ===== BASE RESET ===== */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
@@ -241,7 +263,7 @@ body {
 .info-tags { display: flex; gap: 10px; margin-top: 20px; }
 .info-tags span {
     font-size: 0.75rem;
-    background: #f1f5f9;
+    background: var(--primary-bg);
     padding: 4px 10px;
     border-radius: 4px;
 }
@@ -263,7 +285,7 @@ body {
 .section-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
 .view-all { font-size: 0.85rem; color: var(--accent); text-decoration: none; }
 
-.pub-mini-item { margin-bottom: 15px; padding-bottom: 10px; border-bottom: 1px solid #f1f5f9; }
+.pub-mini-item { margin-bottom: 15px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
 .pub-year-mini { font-size: 0.75rem; font-weight: 700; color: var(--accent); }
 
 .software-mini-card { grid-column: span 1; }
@@ -675,4 +697,112 @@ body {
 
 .dark-mode-toggle input:checked + label .toggle-ball {
     transform: translateX(30px);
+}
+
+/* ===== SEASONAL / WEEKEND THEME DETAILS ===== */
+.hero-card {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--card-bg) 0%, var(--season-soft) 100%);
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+}
+
+/* A big, friendly seasonal emoji in the corner of the hero card */
+.hero-card::after {
+    content: var(--season-emoji);
+    position: absolute;
+    top: 22px;
+    right: 30px;
+    font-size: 4.5rem;
+    line-height: 1;
+    opacity: 0.18;
+    transform: rotate(-10deg);
+    pointer-events: none;
+    user-select: none;
+}
+
+.badge {
+    background: var(--season-soft);
+    color: var(--accent);
+}
+
+.stat-value {
+    color: var(--accent);
+}
+
+/* Small pill in the sidebar: "🍂 Autumn · Weekday" */
+.season-chip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: fit-content;
+    margin: 18px auto 0;
+    padding: 7px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.06);
+    color: #cbd5e1;
+    font-size: 0.75rem;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+    transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.season-chip-emoji {
+    display: inline-block;
+    font-size: 0.95rem;
+    line-height: 1;
+}
+
+/* Weekend: warmer chip, gentle floating emoji, soft accent glows */
+:root.mode-weekend .season-chip {
+    border-color: color-mix(in srgb, var(--accent) 55%, transparent);
+    background: color-mix(in srgb, var(--accent) 18%, transparent);
+    color: #f8fafc;
+}
+
+:root.mode-weekend .season-chip-emoji {
+    animation: season-float 2.8s ease-in-out infinite;
+}
+
+:root.mode-weekend body {
+    background-image:
+        radial-gradient(circle at 88% 8%, color-mix(in srgb, var(--accent) 12%, transparent) 0, transparent 42%),
+        radial-gradient(circle at 6% 78%, color-mix(in srgb, var(--accent) 8%, transparent) 0, transparent 38%);
+    background-attachment: fixed;
+}
+
+@keyframes season-float {
+    0%, 100% { transform: translateY(0) rotate(0); }
+    50% { transform: translateY(-3px) rotate(8deg); }
+}
+
+@media (max-width: 768px) {
+    .hero-card::after {
+        top: 14px;
+        right: 16px;
+        font-size: 3rem;
+        opacity: 0.14;
+    }
+
+    .season-chip {
+        margin-top: 14px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    :root.mode-weekend .season-chip-emoji {
+        animation: none;
+    }
+
+    .sidebar-qr a img,
+    .sw-row,
+    .season-chip {
+        transition: none;
+    }
 }

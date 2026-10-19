@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Sergio Ibarra-Espinosa | Atmospheric Scientist</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/leaflet.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -17,12 +17,52 @@
         gtag('js', new Date());
         gtag('config', 'G-67G23W9M6B'); // This ID seems correct, ensure consistency or remove the script tag above
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
     <!-- Added meta tags for SEO -->
     <meta name="description" content="Dr. Sergio Ibarra-Espinosa is an atmospheric scientist specializing in emissions inventories, climate modeling, and air pollution analysis.">
     <meta name="keywords" content="Atmospheric Scientist, Emissions Specialist, Climate Modeling, Air Pollution, Data Science">
     <meta name="author" content="Dr. Sergio Ibarra-Espinosa">
     <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ibarraespinosa.github.io/">
+
+    <!-- Open Graph / social sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Dr. Sergio Ibarra-Espinosa">
+    <meta property="og:title" content="Dr. Sergio Ibarra-Espinosa | Atmospheric Scientist">
+    <meta property="og:description" content="Senior Atmospheric Scientist specializing in emissions inventories, climate modeling, and air pollution analysis.">
+    <meta property="og:url" content="https://ibarraespinosa.github.io/">
+    <meta property="og:image" content="https://ibarraespinosa.github.io/images/profile.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dr. Sergio Ibarra-Espinosa | Atmospheric Scientist">
+    <meta name="twitter:description" content="Senior Atmospheric Scientist specializing in emissions inventories, climate modeling, and air pollution analysis.">
+    <meta name="twitter:image" content="https://ibarraespinosa.github.io/images/profile.jpg">
+
+    <!-- Structured data (Person) for search engines -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Dr. Sergio Ibarra-Espinosa",
+        "jobTitle": "Senior Atmospheric Scientist",
+        "url": "https://ibarraespinosa.github.io/",
+        "image": "https://ibarraespinosa.github.io/images/profile.jpg",
+        "affiliation": {
+            "@type": "Organization",
+            "name": "Cooperative Institute for Satellite Earth System Studies (CISESS)/ESSIC, University of Maryland"
+        },
+        "alumniOf": [
+            { "@type": "CollegeOrUniversity", "name": "University of São Paulo (USP)" },
+            { "@type": "CollegeOrUniversity", "name": "Universidad de Chile" }
+        ],
+        "knowsAbout": ["Atmospheric Science", "Emissions Inventories", "Climate Modeling", "Air Pollution", "Greenhouse Gases"],
+        "sameAs": [
+            "https://scholar.google.com/citations?user=8ohZGHEAAAAJ",
+            "https://github.com/ibarraespinosa",
+            "https://orcid.org/0000-0002-3162-1905",
+            "https://www.linkedin.com/in/sibarra"
+        ]
+    }
+    </script>
 </head>
 <body>
     <!-- Dark Mode Toggle -->
@@ -49,7 +89,7 @@
             
             <nav class="sidebar-nav">
                 <ul>
-                    <li><a href="#dashboard" class="active"><i class="fas fa-th-large"></i> Dashboard</a></li>
+                    <li><a href="#dashboard" class="active"><i class="fas fa-th-large"></i> Home</a></li>
                     <li><a href="#research"><i class="fas fa-flask"></i> Research</a></li>
                     <li><a href="blog.html"><i class="fas fa-book"></i> Blog</a></li>
                     <li><a href="#publications"><i class="fas fa-book-open"></i> Publications</a></li>
@@ -60,16 +100,18 @@
             </nav>
 
             <div class="sidebar-qr">
-                <img src="images/qr.png" alt="QR code for this website">
-                <p>Scan me</p>
+                <a href="images/qr.png" target="_blank" rel="noopener" title="Open the QR code in a new tab at full size" aria-label="Open the QR code in a new tab at full size">
+                    <img src="images/qr.png" alt="QR code for this website">
+                </a>
+                <p>Scan or click to enlarge</p>
             </div>
 
             <div class="sidebar-footer">
                 <div class="sidebar-social">
-                    <a href="https://scholar.google.com/citations?user=8ohZGHEAAAAJ" target="_blank"><i class="fab fa-google"></i></a>
-                    <a href="https://github.com/ibarraespinosa" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://orcid.org/0000-0002-3162-1905" target="_blank"><i class="fab fa-orcid"></i></a>
-                    <a href="https://www.linkedin.com/in/sibarra" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://scholar.google.com/citations?user=8ohZGHEAAAAJ" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar"><i class="fab fa-google"></i></a>
+                    <a href="https://github.com/ibarraespinosa" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://orcid.org/0000-0002-3162-1905" target="_blank" rel="noopener noreferrer" aria-label="ORCID"><i class="fab fa-orcid"></i></a>
+                    <a href="https://www.linkedin.com/in/sibarra" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 </div>
                 <p>&copy; 2026 Dr. Sergio Ibarra-Espinosa</p>
             </div>
@@ -100,7 +142,7 @@
                 <!-- Key Stats Section -->
                 <section class="bento-item stats-card">
                     <div class="stat-item">
-                        <span class="stat-value">22</span>
+                        <span class="stat-value">26</span>
                         <span class="stat-label">H-Index</span>
                     </div>
                     <div class="stat-item">
@@ -160,11 +202,11 @@
                     <div class="pub-mini-list">
                         <div class="pub-mini-item">
                             <span class="pub-year-mini">2026</span>
-                            <p><a href="blog/a-century-of-vehicular-emissions-brazil.html" rel="noopener">A Century of Vehicular Emissions in Brazil: Unveiling the Impacts of Unique Fuel Mix on Air Quality</a> <em>Env Sci Tech</em></p>
+                            <p><a href="https://www.sciencedirect.com/org/science/article/pii/S2634360626000361" target="_blank" rel="noopener">Reduced U.S. Methane Emissions during the COVID-19 Pandemic</a> <em>Environ. Sci.: Atmos.</em></p>
                         </div>
                         <div class="pub-mini-item">
                             <span class="pub-year-mini">2026</span>
-                            <p>Reduced U.S. Methane Emissions during the COVID-19 Pandemic (under review)<em>ESA</em></p>
+                            <p><a href="blog/a-century-of-vehicular-emissions-brazil.html" rel="noopener">A Century of Vehicular Emissions in Brazil: Unveiling the Impacts of Unique Fuel Mix on Air Quality</a> <em>Env Sci Tech</em></p>
                         </div>
                         <div class="pub-mini-item">
                             <span class="pub-year-mini">2026</span>
@@ -177,27 +219,30 @@
                 <section id="software" class="bento-item software-mini-card">
                     <h3>Featured Software</h3>
                     <div class="software-rows">
-                        <div class="sw-row">
-                            <img src="images/fortran-logo.svg" alt="Fortran Logo" class="sw-icon-img">
+                        <a class="sw-row" href="https://github.com/atmoschem/flan" target="_blank" rel="noopener noreferrer">
+                            <img src="images/fortran-logo.svg" alt="" class="sw-icon-img" aria-hidden="true">
                             <div>
                                 <h4>FLAN</h4>
-                                <p><a href="https://github.com/atmoschem/flan" target="_blank" style="text-decoration: none; color: inherit;">FLAN Model (Fortran)</a></p>
+                                <p>FLAN Model (Fortran)</p>
                             </div>
-                        </div>
-                        <div class="sw-row">
-                            <i class="fab fa-r-project"></i>
+                            <i class="fas fa-arrow-up-right-from-square sw-link-icon" aria-hidden="true"></i>
+                        </a>
+                        <a class="sw-row" href="https://github.com/atmoschem/vein" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-r-project sw-icon-font" aria-hidden="true"></i>
                             <div>
                                 <h4>VEIN</h4>
-                                <p>Vehicular Emissions Inventory</p>
+                                <p>Vehicular Emissions Inventory (R + Fortran)</p>
                             </div>
-                        </div>
-                        <div class="sw-row">
-                            <i class="fab fa-r-project"></i>
+                            <i class="fas fa-arrow-up-right-from-square sw-link-icon" aria-hidden="true"></i>
+                        </a>
+                        <a class="sw-row" href="https://github.com/atmoschem/eixport" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-r-project sw-icon-font" aria-hidden="true"></i>
                             <div>
                                 <h4>EIXPORT</h4>
-                                <p>Emissions Export Utilities</p>
+                                <p>Emissions Export Utilities (R)</p>
                             </div>
-                        </div>
+                            <i class="fas fa-arrow-up-right-from-square sw-link-icon" aria-hidden="true"></i>
+                        </a>
                     </div>
                 </section>
 
@@ -208,7 +253,7 @@
                         <a href="blog.html" class="view-all">Visit Blog <i class="fas fa-arrow-right"></i></a>
                     </div>
                     <p>Insights on atmospheric science, emissions modeling, and data analysis.</p>
-                    <p style="font-size: 0.85rem; margin-top: 10px;"><strong>Latest:</strong> <a href="blog/a-century-of-vehicular-emissions-brazil.html" style="color: var(--accent); text-decoration: none;">A Century of Vehicular Emissions in Brazil</a></p>
+                    <p style="font-size: 0.85rem; margin-top: 10px;"><strong>Latest:</strong> <a href="blog/reduced-us-methane-emissions-covid.html" style="color: var(--accent); text-decoration: none;">Reduced U.S. Methane Emissions during the COVID-19 Pandemic</a></p>
                 </section>
 
 
